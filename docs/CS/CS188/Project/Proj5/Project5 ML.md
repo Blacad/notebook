@@ -67,8 +67,12 @@
 	- 上述描述的技术被称为循环神经网络（RNN）
 
 	- 实现也简单，只要把上述的东西看懂了就知道怎么实现了
-		- 有个关键函数 `movedim(tensor,dim1,dim2)` --- 将dim1 和 dim2 的维度互换
-
+		- 有个关键函数 `movedim(tensor,source_dim,destination_dim)` --- 将 tensor 的 source_dim 移动到 destination_dim，中间维度左移或右移补位(往被移的维度补位)
+		   \- 比如
+		   \- `[A,B,C,D]` 执行 `movedim(0,2)` 得到 `[B,C,A,D]` --- 左移补位
+		   \- `[A,B,C,D,E]` 执行 `movedim(2,0)` 得到 `[C,A,B,D,E]` --- 右移补位
+		   \- `[A,B,C,D,E]` 执行 `movedim((0,1),(3,4))` 得到 `[C,D,E,A,B]`--- 多个维度同时执行
+	
 - Extra Credit --- Digit Classification(CNN)
 	- 在训练神经网络时，经常需要使用比之前使用的简单线性层更高级的层。一种常见类型是卷积层。卷积层使得在多维输入上训练时考虑空间信息变得更加容易。
 

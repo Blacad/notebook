@@ -15,7 +15,7 @@ theme:
     - navigation.indexes
     - header.autohide
   custom_dir: overrides
-  favicon: images/favicon.png
+  favicon: images/photo.JPG
   palette:
     - scheme: slate
 markdown_extensions:
