@@ -1,0 +1,13 @@
+
+- 本节课介绍了 预测宝可梦进化后的 CP 值的详细过程，进而讲清楚 回归任务
+	- 先介绍了简单的线性model和单一输入 xcp 做了简单的预测
+	- 然后引入带 delta 函数的线性model和两个输入 xcp 和 种类，稍微复杂
+	- 最后引入更多输入让网络更加复杂，但是网络复杂后很容易overfitting，于是介绍regularization
+	- 要点
+		- 这里提到，在线性回归中如果你使用的 Loss 是 MAE 或者 MSE，那么Loss 是 convex(凸的)，它不存在局部最优
+		- delta 函数或者说指示函数，用于处理宝可梦的种类输入，设计函数让不同种类宝可梦用不同线性model：$$\delta(x=a)=\begin{cases} 1 \ if \ x=a\\ 0 \ otherwise\end{cases}$$
+		- Regularization 正则化
+			- 正则化参数的目的是为了让参数尽可能平滑，L2 正则化如下
+				- $Loss=MSE+\lambda \sum(w_i)^2$ --- 该损失表明越小的权重越好
+			- 这样当一个数据携带噪声时，平滑的函数会受到更小的噪声影响
+			- 更具体来讲，我们喜欢 平滑的函数(model)但是不能太平滑 --- 适当平滑(调整$\lambda$实现)

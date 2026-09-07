@@ -19,7 +19,7 @@ comments: true
 	- `or` 如果全为 `False`，则返回`False`
 
 
-- [python的赋值操作](python的赋值操作.md)
+- [python的赋值操作](python的赋值与拷贝.md)
 
 - list的切片
 	- 将切片赋值给变量(单独的切片实例) --- 先创建一个切片长度的新list实例，将原list相应位置的元素依次赋值过去(可变浅拷贝、不可变深拷贝)

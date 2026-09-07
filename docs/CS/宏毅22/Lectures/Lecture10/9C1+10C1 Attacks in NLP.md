@@ -1,0 +1,64 @@
+
+## Evasion Attacks and Defenses
+- Evasion Attacks 逃避攻击
+	- 在数据上添加难以察觉的噪声可以改变模型的预测
+	- 更广义来讲，修改输入，使得模型的预测被破坏，同时修改后的输入和原始输入不应改变人类的预测
+- 四个重要组成
+	- 目标：攻击的目标
+	- 变换：如何为可能的对手构建扰动
+	- 约束：一个有效的对抗样本应满足的条件
+	- 搜索方法：如何从变换中找到一个满足约束并达到目标的对抗样本
+- [攻击构建](../../Slides/Lecture9/Attacks-in-NLP-Draft.pdf#page=19)
+- 常见攻击目标
+	- 让分类器分错(只让分错就好了)
+	- 让分类器将某类分错成另一类(比如 科技类都分错为体育类)
+	- 让翻译模型的输出少一部分
+	- ....
+- 常见变换
+	- Word Level
+		- 同义词替换
+		- 用 word embedding 中的距离，近距离替换
+			- [Counter-fitted](../../Slides/Lecture9/Attacks-in-NLP-Draft.pdf#page=29) --- 近义词近，反义词远
+			- 不用Counter-fitted 可能导致部分反义词相近，比如 东西南北都是表示方位可能很近
+		- 用BERT做词替换
+			- 不使用MASK，而直接[用原始句子](../../Slides/Lecture9/Attacks-in-NLP-Draft.pdf#page=31)
+			- 直接用MASK可能替换的词意思不接近
+		- 改变词的语态、时态等
+		- 用 [梯度 做词替换](../../Slides/Lecture9/Attacks-in-NLP-Draft.pdf#page=36)
+		- [基于BERT插入词](../../Slides/Lecture9/Attacks-in-NLP-Draft.pdf#page=37)
+	- [Char Level](../../Slides/Lecture9/Attacks-in-NLP-Draft.pdf#page=39)
+- 常见约束
+	- 约束和任务强相关
+	- Overlap 距离
+		- [Levenshtein edit distance](../../Slides/Lecture9/Attacks-in-NLP-Draft.pdf#page=42)
+			- 最后 lev 的计算值越小证明两者越像
+		- 被修改词的在整个句子的最大占比
+	- Grammaticality 语法
+		- 词性一致
+		- 语法错误数量(用语法网站检测)
+		- 利用 GPT 计算其困惑度PPL
+	- Semantic 语义
+		- 依据 两者的 改变的word embedding 距离来衡量
+		- 依据两者完整的 sequence embedding 距离来衡量
+- 搜索方法
+	- Greedy
+	- Greedy search with word important ranking
+		- [WIR](../../Slides/Lecture9/Attacks-in-NLP-Draft.pdf#page=52-55)
+	- Genetic Algorithm
+		- [evolution and selection](../../Slides/Lecture9/Attacks-in-NLP-Draft.pdf#page=56-57)
+		- CS188中Local Search学过
+
+- 常见逃避攻击方法
+	- [TextFooler](../../Slides/Lecture9/Attacks-in-NLP-Draft.pdf#page=59-60)
+	- [PWWs](../../Slides/Lecture9/Attacks-in-NLP-Draft.pdf#page=61)
+	- [BERT-Attack](../../Slides/Lecture9/Attacks-in-NLP-Draft.pdf#page=62)
+	- [Genetic Algorithm](../../Slides/Lecture9/Attacks-in-NLP-Draft.pdf#page=63)
+	- Universal Trigger
+		- 与任务无关的触发字符串，但添加到原始字符串后可以执行针对性攻击
+		- [具体做法](../../Slides/Lecture9/Attacks-in-NLP-Draft.pdf#page=71-75)
+
+
+
+---以下未讲
+- Imitation Attacks and Defenses
+- Backdoor Attacks and Defenses

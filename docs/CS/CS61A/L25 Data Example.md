@@ -12,6 +12,6 @@ comments: true
 	- ==list的切片==
 		- 将切片赋值给变量(单独的切片实例) --- 先创建一个切片长度的新list实例，将原list相应位置的元素依次赋值过去(可变浅拷贝、不可变深拷贝)
 		- 将变量(list)赋值给切片 --- 先将原list切片范围去除，并创建与变量同长度的元素框，再用变量依次赋值过去(可变浅拷贝、不可变深拷贝)
-		- [python的赋值操作](python的赋值操作.md)
+		- [python的赋值操作](python的赋值与拷贝.md)
 	- `[list2] === list(list2)`会创建一个list实例，它的首元素指向list2
 	- 有关list的环境图可见example里的list_env
