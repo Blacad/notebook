@@ -82,7 +82,7 @@
 
 
 - 小结
-	- 在这里我说明一下已经学习的Search方法 --- 同时分为 Tree Search 版 和 Graph Search 版 --- 在project 1 中我们实现了各种搜索算法的Graph Search版本，因此应该都是OK的，同时在Project1中我们实现了一版新的Graph的 A\* 算法能够确保在 heuristic 选择不当的时候仍然找到最优路径 [project 1](Project1%20Search.md#2)
+	- 在这里我说明一下已经学习的Search方法 --- 同时分为 Tree Search 版 和 Graph Search 版 --- 在project 1 中我们实现了各种搜索算法的Graph Search版本，因此应该都是OK的，同时在Project1中我们实现了一版新的Graph的 A\* 算法能够确保在 heuristic 选择不当的时候仍然找到最优路径 [project 1](../Project/Proj1/Project1%20Search.md#2)
 		- DFS
 		- BFS --- Optimal(BFS是特殊情况的UCS)
 		- IDS --- Great Optimal

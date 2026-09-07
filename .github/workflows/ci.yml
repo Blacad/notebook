@@ -1,25 +1,31 @@
-name: Deploy MkDocs
+name: Deploy documentation
 
 on:
   push:
     branches:
-      - main  # 当推送到 main 分支时触发
+      - main
 
 permissions:
-  contents: write  # 允许推送到 gh-pages 分支
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  build:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
-      - uses: actions/setup-python@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
-
-      - name: Install dependencies
-        run: pip install mkdocs mkdocs-material pymdown-extensions pygments
-
-      - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force
+          python-version: 3.x
+      - run: pip install zensical
+      - run: zensical build --clean
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - uses: actions/deploy-pages@v4
+        id: deployment

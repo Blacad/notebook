@@ -1,9 +1,0 @@
-<!-- overrides/main.html文件内容 -->
-{% extends "base.html" %}
-{% block htmltitle %}
-  {% if page.meta and page.meta.home %}
-    <title>{{ config.site_name }}</title>
-  {% else %}
-    {{ super() }}
-  {% endif %}
-{% endblock %}

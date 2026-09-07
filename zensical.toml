@@ -1,0 +1,227 @@
+[project]
+site_name = "Blacad Docs"
+site_description = "Blacad 的个人文档笔记"
+site_author = "Blacad"
+site_url = "https://Blacad.github.io/blog/"
+repo_name = "Blacad/blog"
+repo_url = "https://github.com/Blacad/blog"
+edit_uri = "edit/main/docs/"
+copyright = "Copyright &copy; 2026 Blacad"
+use_directory_urls = false
+
+nav = [
+  { "🏠首页" = "index.md" },
+  { "💻 CS" = [
+    "CS/index.md",
+    { "CS61A" = [
+      "CS/CS61A/index.md",
+      "CS/CS61A/L1 Welcome.md",
+      "CS/CS61A/L2 Functions.md",
+      "CS/CS61A/L3 Control.md",
+      "CS/CS61A/L4 Higher-Order Function.md",
+      "CS/CS61A/L5 Environments.md",
+      "CS/CS61A/L6 Sounds.md",
+      "CS/CS61A/L7 Function Abstract.md",
+      "CS/CS61A/L8 Function Example.md",
+      "CS/CS61A/L9 Recursion.md",
+      "CS/CS61A/L10 Tree Recursion.md",
+      "CS/CS61A/L11 Sequences.md",
+      "CS/CS61A/L12 Containers.md",
+      "CS/CS61A/L13 Data Abstraction.md",
+      "CS/CS61A/L14 Trees.md",
+      "CS/CS61A/L15 Mutability.md",
+      "CS/CS61A/L16 Iterators.md",
+      "CS/CS61A/L17 Generators.md",
+      "CS/CS61A/L18 Objects.md",
+      "CS/CS61A/L19 Class Attributes.md",
+      "CS/CS61A/L20 Inheritance.md",
+      "CS/CS61A/L21 Representations.md",
+      "CS/CS61A/L22 Composition.md",
+      "CS/CS61A/L23 Efficiency.md",
+      "CS/CS61A/L24 Decomposition.md",
+      "CS/CS61A/L25 Data Example.md",
+      "CS/CS61A/L28 Scheme.md",
+      "CS/CS61A/L29 Scheme Lists.md",
+      "CS/CS61A/L30 Calculator.md",
+      "CS/CS61A/L31 Interpreters.md",
+      "CS/CS61A/L32 Tail Calls.md",
+      "CS/CS61A/L33 Programs as Data.md",
+      "CS/CS61A/L34 Macros.md",
+      "CS/CS61A/L35 SQL.md",
+      "CS/CS61A/L36 Tables.md",
+      "CS/CS61A/L37 Aggregation.md",
+      "CS/CS61A/L38 Database.md",
+      "CS/CS61A/L39 思考解决问题.md",
+      "CS/CS61A/Hog/Hog.md",
+      "CS/CS61A/Cats/Cats.md",
+      "CS/CS61A/Ants/Ants.md",
+      "CS/CS61A/Scheme/Scheme.md",
+      "CS/CS61A/Note.md",
+    ]},
+    { "CS70" = [
+      "CS/CS70/index.md",
+      "CS/CS70/Note10 Counting.md",
+      "CS/CS70/Note11 Countability.md",
+      "CS/CS70/Note12 Computability.md",
+      "CS/CS70/Note13 Discrete Probability.md",
+      "CS/CS70/Note14 Conditional Probability.md",
+      "CS/CS70/Note15 RV.md",
+      "CS/CS70/Note16 RV.md",
+      "CS/CS70/Note17 Concentration Inequalities and the Laws of Large Numbers.md",
+      "CS/CS70/Note18 Hashing and Load Balance.md",
+      "CS/CS70/Note19 Geometric and Poisson Distributions.md",
+      "CS/CS70/Note20 Continuous Probability Distribution.md",
+      "CS/CS70/Note21 Markov Chains.md",
+      "CS/CS70/不完备补充.md",
+      "CS/CS70/限与界.md",
+    ]},
+    { "CS188" = [
+      "CS/CS188/index.md",
+      "CS/CS188/Lectures/L1 Introduction.md",
+      "CS/CS188/Lectures/L2 Search.md",
+      "CS/CS188/Lectures/L3 Informed Search.md",
+      "CS/CS188/Lectures/L4 Local Search.md",
+      "CS/CS188/Lectures/L5 Games.md",
+      "CS/CS188/Lectures/L6 Uncertainty.md",
+      "CS/CS188/Lectures/L7 Logic.md",
+      "CS/CS188/Lectures/L8 Propositional Logic.md",
+      "CS/CS188/Lectures/L9 First Order Logic.md",
+      "CS/CS188/Lectures/L10 Probability.md",
+      "CS/CS188/Lectures/L11 Bayes Nets.md",
+      "CS/CS188/Lectures/L12 Bayes Nets - Exact Inference.md",
+      "CS/CS188/Lectures/L13 Bayes Nets - Approximate Inference.md",
+      "CS/CS188/Lectures/L14 Markov Models.md",
+      "CS/CS188/Lectures/L15 HMMS.md",
+      "CS/CS188/Lectures/L16 Dynamic Bayes Nets and Particle Filters.md",
+      "CS/CS188/Lectures/L17 Rational Decisions.md",
+      "CS/CS188/Lectures/L18 Markov Decision Process.md",
+      "CS/CS188/Lectures/L19 MDP II.md",
+      "CS/CS188/Lectures/L20 ML I.md",
+      "CS/CS188/Lectures/L21 ML II.md",
+      "CS/CS188/Lectures/L22 ML III.md",
+      "CS/CS188/Lectures/L23 ML IV.md",
+      "CS/CS188/Lectures/L24 RL I.md",
+      "CS/CS188/Lectures/L25 RL II.md",
+      "CS/CS188/Lectures/L26 RL III.md",
+      "CS/CS188/Lectures/拓展课 I --- AI Existential Safety(RL).md",
+      "CS/CS188/Lectures/拓展课 II --- LLM.md",
+    ]},
+  ]},
+]
+
+extra_css = [
+  "css/counter.css",
+  "css/custom.css",
+  "css/header.css",
+  "css/sidebar.css",
+  "css/statistics.css",
+  "https://unpkg.com/katex@0/dist/katex.min.css",
+  "https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css",
+]
+
+extra_javascript = [
+  "js/anchor.js",
+  "js/katex.js",
+  "js/toc.js",
+  "js/statistics.js",
+  "https://unpkg.com/katex@0/dist/katex.min.js",
+  "https://unpkg.com/katex@0/dist/contrib/auto-render.min.js",
+]
+
+[project.markdown_extensions.toc]
+permalink = true
+toc_depth = 4
+
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.pymdownx.emoji]
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.pymdownx.details]
+
+[project.markdown_extensions.pymdownx.highlight]
+use_pygments = true
+
+[project.markdown_extensions.pymdownx.inlinehilite]
+
+[project.markdown_extensions.pymdownx.superfences]
+custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+]
+
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+
+[project.markdown_extensions.footnotes]
+[project.markdown_extensions.pymdownx.caret]
+[project.markdown_extensions.pymdownx.keys]
+[project.markdown_extensions.pymdownx.mark]
+[project.markdown_extensions.pymdownx.tilde]
+
+[project.markdown_extensions.pymdownx.arithmatex]
+generic = true
+
+[project.markdown_extensions.def_list]
+
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
+
+[project.markdown_extensions.abbr]
+[project.markdown_extensions.pymdownx.snippets]
+[project.markdown_extensions.md_in_html]
+[project.markdown_extensions.pymdownx.blocks.caption]
+
+[project.theme]
+custom_dir = "overrides"
+favicon = "images/photo.JPG"
+language = "zh"
+features = [
+  "announce.dismiss",
+  "content.action.edit",
+  "content.action.view",
+  "content.code.annotate",
+  "content.code.copy",
+  "content.code.select",
+  "content.footnote.tooltips",
+  "content.tabs.link",
+  "content.tooltips",
+  "navigation.footer",
+  "navigation.indexes",
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  "navigation.instant.progress",
+  "navigation.path",
+  "navigation.prune",
+  "navigation.tabs",
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+  "toc.follow",
+]
+
+[project.theme.icon]
+logo = "material/notebook"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+accent = "blue"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+accent = "teal"
+
+[project.theme.icon.admonition]
+success = "octicons/thumbsup-16"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/Blacad"

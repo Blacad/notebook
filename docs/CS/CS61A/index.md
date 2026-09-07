@@ -1,4 +1,4 @@
-# 说明
+# CS61A
  2024fall UCB CS61A
 
 - 有一本专门介绍 python 语法的书籍也提供出来 [py4e](https://www.learncs.site/docs/curriculum-resource/py4e) --- 本书更偏向于 Python 语言的实践应用，而非语言本身，可以当作Python工具书使用

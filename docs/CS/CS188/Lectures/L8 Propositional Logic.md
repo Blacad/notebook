@@ -59,7 +59,7 @@
 		- ==successor-state axiom 继承状态公理==
 			- $X\_t \iff [X\_t-1 \wedge \neg(action\_t-1 \ made \ it \ false)] \vee  [\neg X\_t-1 \wedge (action\_t-1 \ made \ it \ true)]$
 		- 对于Pacman来讲的logic形式化 --- 详情回顾[[L7 Logic]]![](assets/Pacman_logic.png)
-			- 我们可以使用这种方法 Plan-to-find-path 也可以有以下的更多作用，详情见 [Project 3](Project3%20Logic%20and%20Classic%20Planning.md)
+			- 我们可以使用这种方法 Plan-to-find-path 也可以有以下的更多作用，详情见 [Project 3](../Project/Proj3/Project3%20Logic%20and%20Classic%20Planning.md)
 	- ==Pacman KB logic agent ==
 		- 可以这样问自己 $KB \wedge <actions> \wedge <percepts> |= At\_2,2\_6$ 是否成立
 		- 在每次 action 和 percept 之后将已验证的字面量或称状态放入KB，比如 $KB \wedge action\_t-1 \wedge percept\_t |= X\_t$ 就可以将 $X\_t$ 添加进KB

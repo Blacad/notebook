@@ -1,0 +1,13 @@
+<div class="md-copyright" style="margin-left: 38%">
+  {% if config.copyright %}
+    <div class="md-copyright__highlight" style="text-align: center">
+      {{ config.copyright }}
+    </div>
+  {% endif %}
+  {% if not config.extra.generator == false %}
+    Powered by
+    <a href="https://zensical.org" target="_blank" rel="noopener">Zensical</a>
+    modified by
+    <a href="https://github.com/Blacad" target="_blank" rel="noopener">Blacad</a>
+  {% endif %}
+</div>
