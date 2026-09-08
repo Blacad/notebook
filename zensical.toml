@@ -12,6 +12,7 @@ use_directory_urls = false
 extra_css = [
   "css/counter.css",
   "css/custom.css",
+  "css/home.css",
   "css/header.css",
   "css/sidebar.css",
   "css/statistics.css",
@@ -21,6 +22,7 @@ extra_css = [
 
 extra_javascript = [
   "js/anchor.js",
+  "js/home.js",
   "js/katex.js",
   "js/toc.js",
   "js/statistics.js",
@@ -84,12 +86,10 @@ features = [
   "content.tabs.link",
   "content.tooltips",
   "navigation.footer",
-  "navigation.indexes",
   "navigation.instant",
   "navigation.instant.prefetch",
   "navigation.instant.progress",
   "navigation.path",
-  "navigation.prune",
   "navigation.tabs",
   "navigation.top",
   "navigation.tracking",

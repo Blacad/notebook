@@ -1,13 +1,12 @@
+title: 城市
 preserve_directory_names: true
 append_unmatched: true
 sort:
   type: natural
   by: filename
   sections: first
-ignore:
-  - 马克思主义/
-  - board.md
 nav:
-  - 首页: index.md
-  - "💻 CS": CS
-  - "🌆 生活": 城市
+  - 说明.md
+  - 杭州:
+    - 杭州/说明.md
+    - 杭州/*

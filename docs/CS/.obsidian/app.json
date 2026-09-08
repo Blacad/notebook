@@ -1,7 +1,4 @@
 {
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "assets",
-  "newLinkFormat": "relative",
-  "showLineNumber": true,
-  "useMarkdownLinks": true
+  "showLineNumber": true
 }

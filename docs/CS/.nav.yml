@@ -5,13 +5,31 @@ sort:
   type: natural
   by: filename
   sections: first
+ignore:
+  - CS50/
+  - CS106L/
+  - 宏毅2526/
+  - 学习路线.md
 nav:
-  - index.md
-  - CS50
-  - CS61A
-  - CS70
-  - CS106L
-  - CS188
-  - 李宏毅机器学习 2022: 宏毅22
-  - 李宏毅生成式人工智能: 宏毅2526
-  - "*"
+  - 说明.md
+  - CS61A:
+    - CS61A/说明.md
+    - CS61A/Lectures
+    - CS61A/示例代码
+    - CS61A/Project
+    - CS61A/Notes
+  - CS70:
+    - CS70/说明.md
+    - CS70/Lectures
+    - CS70/HW
+  - CS188:
+    - CS188/说明.md
+    - CS188/Lectures
+    - CS188/Project
+  - 宏毅22:
+    - 宏毅22/说明.md
+    - Lectures:
+      - 宏毅22/Lectures/Intro.md
+      - 宏毅22/Lectures/*
+    - 宏毅22/HW
+    - "宏毅22/*.md"
