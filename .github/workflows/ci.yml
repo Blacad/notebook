@@ -23,6 +23,7 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install zensical
+      - run: python3 scripts/check_links.py
       - run: zensical build --clean
       - uses: actions/upload-pages-artifact@v4
         with:

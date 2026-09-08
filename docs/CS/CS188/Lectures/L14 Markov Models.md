@@ -12,7 +12,7 @@
 		- 我们在本节==考虑 一阶Markov model==
 	- Joint distribution $P(X_0,...,X_T)=P(X_0)\prod_t P(X_t|X_{t-1})$
 	- 形态
-		- ![[MC.png]]
+		- ![MC.png](../assets/MC.png)
 
 - 在 cs70 中有Markov Chain(一阶)，它的重要三元素+重要性质：
 	- 三元素

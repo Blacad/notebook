@@ -35,7 +35,7 @@
 		- likelihood weighting 似然权重
 			- 拒绝采样中，我们有证据了但是很多样本与证据不符合要被删除，导致样本浪费
 			- 似然权重就是我们将已知证据的变量固定，然后采样其余变量，这样会导致采样的分布不对，我们需要进行纠正
-			- 纠正就需要似然权重，由于我们知道 CPTs，我们就利用证据的CPTs表来更新权重，比如![似然权重.png](assets/似然权重.png)
+			- 纠正就需要似然权重，由于我们知道 CPTs，我们就利用证据的CPTs表来更新权重，比如![似然权重.png](../assets/似然权重.png)
 				- 以上 S 和 W 已经固定为 s和w
 				- 当采样到已知证据的变量时，固定为证据，同时需要对权重乘上它CPTs表中对应的概率
 				- 而采样未知证据的变量时，正常采样即可
@@ -52,5 +52,5 @@
 				- X的子节点
 				- X的子节点的其它父节点
 			- pipeline
-				-  从 P(Xi | X1,..., Хi-1, Xi+1.., Xn) = P(Xi| markov_blanket(Xi)) 中采样非证据变量 X，重复多次，例如![Gibbs.png](assets/Gibbs.png)
-				- 具体采样的方法：只有包含重新采样变量的CPTs需要考虑，并将它们连接起来，如下![mcmc.png](assets/mcmc.png)
+				-  从 P(Xi | X1,..., Хi-1, Xi+1.., Xn) = P(Xi| markov_blanket(Xi)) 中采样非证据变量 X，重复多次，例如![Gibbs.png](../assets/Gibbs.png)
+				- 具体采样的方法：只有包含重新采样变量的CPTs需要考虑，并将它们连接起来，如下![mcmc.png](../assets/mcmc.png)

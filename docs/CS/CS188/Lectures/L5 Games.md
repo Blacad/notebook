@@ -51,7 +51,7 @@
 - ==Game Tree Pruning==
 	- Alpha-Beta Pruning
 		- 方法 ：利用 Minimax 特性来剪枝部分State，在探知到某些 State后我们能知道上层State的取值范围，如果已经没有交集就可以剪枝掉(MiniMax本身是不带剪枝，它只会算所有的min-max)
-		- [具体实现](Notes/cs188-sp24-note05.pdf#page=6)
+		- [具体实现](../Notes/cs188-sp24-note05.pdf#page=6)
 			- $\alpha$ 是 MAX 的最好值
 			- $\beta$ 是 MIN的最好值
 			- 剪枝逻辑

@@ -40,7 +40,7 @@
 	- 使用位置 --- loss.backward() 之后，optimizer.step() 之前
 
 - 数据增强 ---  变换 `torchvision.transforms.Compose([])`
-	- [[Compose]] 的使用说明
+	- [Compose](Compose.md) 的使用说明
 	- 可以在 DataSet 的 `__getitem__` 方法中对图像进行变化，这样多训练几个epoch就可以训练到经过不同变换的图片，实现数据增强
 	- 这个只对训练数据使用，不要对验证和测试数据使用
 

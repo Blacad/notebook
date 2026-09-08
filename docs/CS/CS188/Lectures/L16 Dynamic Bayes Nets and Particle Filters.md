@@ -5,9 +5,9 @@
 		- 多个状态转移矩阵
 		- CPTs + 网络拓扑结构
 	- 形式
-		- ![[DBNs.png]]
+		- ![DBNs.png](../assets/DBNs.png)
 	- 一个DBNs的简单例子
-		- ![[DBNsExample.png]]
+		- ![DBNsExample.png](../assets/DBNsExample.png)
 	- 每个HMM都是一个单变量DBN，因此DBNs其实是更为复杂的HMMs
 
 - Exact Inference in DBNs
@@ -32,6 +32,6 @@
 		- 用predict和update完成X分布的更新后，根据新X重新采样一定数量粒子，这些粒子表明X的新分布
 		- 如此反复
 	- 由此可知，假设X有$10^{20}$种状态，而我们的粒子数量选定 $10^{5}$ 个，这样我们能节省很多空间也能提高计算效率，逐渐将概率低的粒子剔除
-	- 基本思路就是上面的逻辑，但是想看更加详细的算法，可以看[[Project4 Ghostbusters#HMMs(DBNs) Approximate Inference]] 的
+	- 基本思路就是上面的逻辑，但是想看更加详细的算法，可以看[Project4 Ghostbusters](../Project/Proj4/Project4%20Ghostbusters.md#hmmsdbns-approximate-inference) 的
 
 

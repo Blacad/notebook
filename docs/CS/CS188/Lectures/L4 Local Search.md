@@ -50,7 +50,7 @@
 		- cross-over
 		- mutation
 	- 首先依据 fitness 函数计算个体的目标值，由目标值和selection 函数决定要选择的K个个体(可被复选)，进行 Pairs(配对)，在Pairs中进行Cross-Over，最后还会进行 Mutation 模拟突变
-	- 可以运用至N皇后问题，具体见[Note](Notes/cs188-sp24-note04.pdf#page=4)
+	- 可以运用至N皇后问题，具体见[Note](../Notes/cs188-sp24-note04.pdf#page=4)
 
 
 - ==Local Search in continuous world==

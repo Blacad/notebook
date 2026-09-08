@@ -31,13 +31,13 @@
 			- model-checking --- 对于每一个可能的世界，如果a为真，确保b也为真(穷举法)
 			- theorem-proving --- Search从a到β的证明步骤（推理规则）序列
 
-- ==Propositional logic== --- [Note](Notes/cs188-sp24-note07.pdf#page=2) 很清晰不赘述了
+- ==Propositional logic== --- [Note](../Notes/cs188-sp24-note07.pdf#page=2) 很清晰不赘述了
 	- Syntax
 	- Semantics(只写两个需要注意的)
 		- $A \Rightarrow B$ is True, 除了 A为真且B为假
 		- $A \Longleftrightarrow B$ is True 等价于 A、B同True 或 A、B 同 False
-	- Propositional logic 解释器函数 [Slides](Slides/cs188-sp24-lec07.pdf#page=14)
-	- 使用 Propositional logic 形式化解决 PacMan 问题 [Slides](Slides/cs188-sp24-lec07.pdf#page=15) 中有几页描述很清晰
+	- Propositional logic 解释器函数 [Slides](../Slides/cs188-sp24-lec07.pdf#page=14)
+	- 使用 Propositional logic 形式化解决 PacMan 问题 [Slides](../Slides/cs188-sp24-lec07.pdf#page=15) 中有几页描述很清晰
 
 - ==Entails 和 Implies的区别==
 	- Entails $|=$ vs Implies $\Rightarrow$

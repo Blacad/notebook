@@ -1,0 +1,11 @@
+preserve_directory_names: true
+append_unmatched: true
+sort:
+  type: natural
+  by: filename
+  sections: first
+nav:
+  - 首页: index.md
+  - "💻 CS": CS
+  - "🌆 生活": 城市
+  - 马克思主义

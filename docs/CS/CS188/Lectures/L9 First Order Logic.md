@@ -12,7 +12,7 @@
 	- First-Order logic 的表达能力远超 Propositional logic
 	- 比如 基于 successor-state axiom 和 FOL我们可以写出Alive的规则$\forall t \ Alive(t) \iff [Alive(t-1) \wedge \neg \exists g,x,y \ [Ghost(g) \wedge At(Pacman,x,y,t-1)\wedge At(g,x,y,t-1)]]$
 		- 如果这个需要用 propositional logic 来表示会非常复杂，我们需要为每个 t 创造这样的式子，同时后面的鬼怪和位置判断也会非常复杂都需要列出来
-	- 再比如 表示 Pacman同时只能在一个位置，其中FOL表示First-order Logic，PL表示Propositional logic![](assets/FOLEPL.png)
+	- 再比如 表示 Pacman同时只能在一个位置，其中FOL表示First-order Logic，PL表示Propositional logic![](../assets/FOLEPL.png)
 
 
 - ==Possible World --- 可能世界==
@@ -32,7 +32,7 @@
 
 
 - ==Inference in FOL==
-	- 本质上与PL一样，但是如果我们entail一个 存在量词修饰的query最好再补充一个binding使得信息更多![](assets/FOLinference.png)
+	- 本质上与PL一样，但是如果我们entail一个 存在量词修饰的query最好再补充一个binding使得信息更多![](../assets/FOLinference.png)
 	- Propositionalization 命题化
 		- 将 FOL 转换为 PL，然后通过L8中的SAT solver 去解决即 使用 DPLL 验证可满足性
 	- Lifted inference 提升推理

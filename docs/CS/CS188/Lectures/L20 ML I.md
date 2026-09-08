@@ -36,7 +36,7 @@
 		- 查询 P(Y|f1, f2 ..., fn)
 		- 给定所有输入特征的标签概率，使用推理算法（例如变量消除）来计算这个概率 
 	- Naive Bayes Inference 示例
-		- ![[NaiveBayesInfe.png]]
+		- ![NaiveBayesInfe.png](../assets/NaiveBayesInfe.png)
 
 	- Bag-of-words Naive Bayes
 		- 在区分垃圾邮件与否是，一般我们会提取邮件的特征作为 leave，而标签作为 root
@@ -60,7 +60,7 @@
 	- 为了更好的泛化性来防止过拟合，我们需要 smoothing
 		- Laplace Smoothing
 			- 将所有可能出现的情况都加 1 or k (这个可以指定)，当然也可以指定只加 $\alpha$ 这些情况
-			- 如下图所示为Laplace(+1)的例子![[LaplaceEstimate.png]]
+			- 如下图所示为Laplace(+1)的例子![LaplaceEstimate.png](../assets/LaplaceEstimate.png)
 	- 同时我们的数据往往分成 三份
 		- Training、Held-out Data、Test Data
 		- 其中，Held-out Data 是验证集，不作为训练，而是作为 Tuning

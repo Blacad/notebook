@@ -1,12 +1,12 @@
 - 本节主题 --- 神经网络的应用和训练
 
 - 神经网络 Neural Network --- 逻辑回归的自然推广
-	- 神经网络示意图![[NN.png]]
+	- 神经网络示意图![NN.png](../assets/NN.png)
 		- 这里用的激活函数是Sigmoid，现在大多数用的是ReLU
 		- 如果不用激活函数深度学习将没有意义
 
 - 讲了很多关于神经网络的矩阵运算，这些东西都很熟了，贴个图
-	- 其余类似![[NNMC.png]]
+	- 其余类似![NNMC.png](../assets/NNMC.png)
 
 - 常用的激活函数 非线形
 	- Sigmoid
@@ -14,12 +14,12 @@
 	- ReLU
 
 - Batch Computation 批计算
-	- 图例![[BatchComputation.png]]
+	- 图例![BatchComputation.png](../assets/BatchComputation.png)
 
 
 
 - Loss 损失
-	- ![[Loss.png]]
+	- ![Loss.png](../assets/Loss.png)
 
 
 - Optimization --- 基于 Hill Climbing

@@ -53,8 +53,8 @@
 	- 结果是一个选定的查询和证据的结合，然后进行 归一化操作，例如
 		- 我们的证据是 $+r$，查询是 $L$，那么我们需要先得到结合$P(+r,L)$ ，然后进行归一化后就是 $P(L|+r)$，当然也可以基于Bayes Nets直接进行计算
 	- 具体来讲，有证据的推理过程如下
-		- 简化![简化.png](assets/简化.png)
-		- Join、Eliminate and Normalization![归一化.png](assets/归一化.png)
+		- 简化![简化.png](../assets/简化.png)
+		- Join、Eliminate and Normalization![归一化.png](../assets/归一化.png)
 
 
 - General Variable Elimination 通用变量消除

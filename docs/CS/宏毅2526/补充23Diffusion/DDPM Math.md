@@ -1,0 +1,1 @@
+- [DDPM的数学原理](DDPM.pdf) 讲解，直接看的slides

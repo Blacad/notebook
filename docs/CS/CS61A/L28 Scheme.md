@@ -55,7 +55,7 @@ comments: true
 
 - More Special Forms
 	- `Cond & Begin` 
-		- `(cond ((condi) (proce)) () (else (proce)))`用于解决if-elif-else语句![[Pasted image 20251014113659.png]]
+		- `(cond ((condi) (proce)) () (else (proce)))`用于解决if-elif-else语句![Pasted image 20251014113659.png](assets/Pasted%20image%2020251014113659.png)
 		- Begin配合Cond使用将多个表达式合一![Pasted image 20251014113832.png](assets/Pasted image 20251014113832.png)
 	- `(let ((a 1) (b 2)) (return))` 
 		- 临时将符号绑定，只在一个表达式中生效![Pasted image 20251014114209.png](assets/Pasted image 20251014114209.png)

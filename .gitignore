@@ -1,4 +1,10 @@
 .DS_Store
+__pycache__/
+*.py[cod]
 .cache/
 .vscode/
 site/
+docs/CS/.obsidian/plugins/
+docs/CS/.obsidian/themes/
+docs/CS/.obsidian/workspace*.json
+docs/CS/.obsidian/.DS_Store

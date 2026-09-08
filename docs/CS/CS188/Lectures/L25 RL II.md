@@ -2,7 +2,7 @@
 - 本节主要讲述 RL 的基本概念
 
 - RL 的构成和概念
-	- RL的构成形式化 ---  [[cs188-sp24-lec24.pdf#page=12-13]]
+	- RL的构成形式化 ---  [cs188-sp24-lec24.pdf](../Slides/cs188-sp24-lec24.pdf#page=12-13)
 	- 可以理解为 缺失 R 和 T 信息的 MDPs，也可以理解为 ML + MDPs(缺信息)
 	- RL的经典例子 --- Bandit 老虎机
 	- Offline Planning --- MDPs
@@ -20,7 +20,7 @@
 
 - Model-Based Learning
 	- 在基于模型的学习中，智能体通过记录进入每个Q状态（s,a）后到达每个状态s'的次数，生成状态转移函数$\hat{T}(s,a,s')$的近似 即：通过归一化它收集的计数——将每个观察到的元组（s,a,s'）的计数除以代理处于Q状态（s,a）的所有实例的计数之和
-	- 我们可以让 agent 以初始策略 $\pi_{explore}$  去尝试几个 episodes，然后基于这些episodes的结果去估算 T 和 R --- [[cs188-sp24-note24.pdf#page=2-3]]
+	- 我们可以让 agent 以初始策略 $\pi_{explore}$  去尝试几个 episodes，然后基于这些episodes的结果去估算 T 和 R --- [cs188-sp24-note24.pdf](../Notes/cs188-sp24-note24.pdf#page=2-3)
 	- 当我们已经认为 agent 的 T 和 R 已经训练到位，就停止代理训练接着 使用当前的$\hat{T}$和$\hat{R}$模型生成策略$\pi_{exploit}$，并使用$\pi_{exploit}$ 来继续进行 MDP 过程使奖励最大化
 
 
@@ -37,7 +37,7 @@
 
 	- Direct Evaluation
 		- 直接评估所做的只是固定某些策略π，并让代理在遵循π的过程中产生几个 episodes
-		- 随着代理通过这些阶段收集样本，它维护着从每个状态获得的总体效用计数以及访问每个状态的次数。在任何时刻，我们可以通过将来自状态s的总效用除以s被访问的次数来计算任何状态s的估计值。 --- [[cs188-sp24-note24.pdf#page=4]]
+		- 随着代理通过这些阶段收集样本，它维护着从每个状态获得的总体效用计数以及访问每个状态的次数。在任何时刻，我们可以通过将来自状态s的总效用除以s被访问的次数来计算任何状态s的估计值。 --- [cs188-sp24-note24.pdf](../Notes/cs188-sp24-note24.pdf#page=4)
 		- 尽管直接评估最终会学习到每个状态的状态值，但由于它浪费了关于状态之间转换的信息，它通常收敛得非常慢。
 
 	- Temporal Difference Learning(TD)

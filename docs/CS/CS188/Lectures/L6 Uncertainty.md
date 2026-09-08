@@ -17,7 +17,7 @@
 
 - ==Monte Carlo Tree Search==
 	- 基于 $\alpha-\beta$ search 选定一个固定的 horizon
-	- 两个重要思想 --- 结合[图](Notes/cs188-sp24-note06.pdf#page=5)更好理解
+	- 两个重要思想 --- 结合[图](../Notes/cs188-sp24-note06.pdf#page=5)更好理解
 		- 通过 rollout 评估 - 从状态 s 开始玩多局游戏直到结束（使用简单、快速的 rollout 策略），并计算胜利和失败次数
 		- 选择性搜索Selective search - 探索有助于改善根节点决策的树的部分，而不考虑深度
 	- Version 0 实现
@@ -32,7 +32,7 @@
 			- $N(n)=节点n的rollout总数$ 
 			- $U(n)=节点n的rollouts总效用（例如，总获胜次数）$
 			- 第一个term描述了节点有多有希望，而第二个term描述了我们对该节点效用的不确定性
-	- ==Version 2.0 UCT 实现== --- [Slides](Slides/cs188-sp24-lec06.pdf#page=58) 上的图不错
+	- ==Version 2.0 UCT 实现== --- [Slides](../Slides/cs188-sp24-lec06.pdf#page=58) 上的图不错
 		- 重复直到时间耗尽
 			- 在当前搜索树中，递归地应用UCB选择一条到达叶节点n（未完全展开）的路径
 			- 向n添加一个新的子节点c并从c运行一次rollout

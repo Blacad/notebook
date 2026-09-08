@@ -47,4 +47,4 @@
 - Conformer --- `ConformerBlock(dim = d_model,dim_head = 4,heads = 4,ff_mult = 4,conv_expansion_factor = 2, conv_kernel_size = 20,attn_dropout = dropout,ff_dropout = dropout,conv_dropout = dropout)`
 	- Conformer 作为 TransformerEncoder 的变体，它在多头自注意力机制后面加上了卷积模块，具体结构详见Slides
 	- 它能在 自注意力机制 关注全局信息的同时，利用卷积关注局部信息，特别是在语音处理上经常使用
-	- [[Conformer参数解析]]
+	- [Conformer参数解析](Conformer参数解析.md)

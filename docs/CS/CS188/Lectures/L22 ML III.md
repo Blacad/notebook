@@ -12,7 +12,7 @@
 
 - Weight Update
 	- 图示(默认列向量)
-		- ![[weightupdate.png]]
+		- ![weightupdate.png](../assets/weightupdate.png)
 		- $Loss = \sum_i (f(x^i)^{T}w - y_i)^2/2$
 		- 目标 $argmin_w |Xw - y|^2/2$ 
 		- $\nabla_w(y-Xw)^T(y-Xw)/2=0$ --> $-X^Ty+X^TXw=0$
@@ -28,20 +28,20 @@
 	- Non-Separable Case: Probabilistic Decision 不可分情况：概率决策
 		- $H(z)=sigmoid(z)$
 		- 这样推理的策略就变成 likelihood 的了
-			- 这就是逻辑回归 Logical Regression  ![[LogisticRegression.png]]
+			- 这就是逻辑回归 Logical Regression  ![LogisticRegression.png](../assets/LogisticRegression.png)
 
 
 	- Multi-class Logistic Regression
 		- 与线性分类器的操作一样，每个类都有一个分数 z
 		- 那么各个类的概率分别是 $\frac{e^{z_i}}{e^{z_1}+...}$
 		- 推理策略为
-			- 多类逻辑回归![[MultiClassLR.png]]
+			- 多类逻辑回归![MultiClassLR.png](../assets/MultiClassLR.png)
 
 	- 二分类是多分类的特例
 		- softmax $\frac{e^{c1}}{e^{c1}+e^{c2}}$ 如果 c1 类的总是0，那么成为 sigmoid $\frac{1}{1+e^{c2}}$
 
 
 	- Optimization 优化
-		- 更新逻辑回归的权重![[OptimizationLR.png]]
+		- 更新逻辑回归的权重![OptimizationLR.png](../assets/OptimizationLR.png)
 			- 梯度上升 Gradient Ascent 更新权重的方式 
 			- $\alpha$ 是学习率

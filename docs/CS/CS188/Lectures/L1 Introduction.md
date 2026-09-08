@@ -32,7 +32,7 @@
 	- 大脑仍可以为AI提供巨大的灵感！
 
 - A short History of AI
-	- [history](Slides/cs188-sp24-lec01.pdf#page=45-47)
+	- [history](../Slides/cs188-sp24-lec01.pdf#page=45-47)
 
 
 - ==Designing A Rational Agent==

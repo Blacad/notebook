@@ -1,6 +1,6 @@
 
 - 当输入值较小时，权重更新后的变化就能[较小](../../Slides/Lecture5/normalization_v4P1.pdf#page=2)，但是输入值很大时，权重更新后的变化就会[很大](../../Slides/Lecture5/normalization_v4P1.pdf#page=3)
-	- 我们需要一个方式能够将各输入值限定在适当范围，这样能够让 [[error surface]] 更加平缓，不至于非常陡峭
+	- 我们需要一个方式能够将各输入值限定在适当范围，这样能够让 [error surface](error%20surface.md) 更加平缓，不至于非常陡峭
 	- 这样的方式被称为 [Feature Normalization](../../Slides/Lecture5/normalization_v4P1.pdf#page=4)，其中 Batch Normalization 是方法之一
 
 - [BatchNorm](../../Slides/Lecture5/normalization_v4P1.pdf#page=6-8)

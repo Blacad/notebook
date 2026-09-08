@@ -27,16 +27,16 @@
 
 - 解决多臂老虎机的算法
 	- Greedy Algorithm
-		- ![[RLGreedy.png]]
+		- ![RLGreedy.png](../assets/RLGreedy.png)
 	- $\epsilon-$ Greedy Algorithm
-		- ![[RLeGreedy.png]]
+		- ![RLeGreedy.png](../assets/RLeGreedy.png)
 	- Optimistic Initialization
-		- ![[OptInit.png]]
+		- ![OptInit.png](../assets/OptInit.png)
 	- Decaying $\epsilon_t-$ Greedy Algorithm
-		- ![[DRLeGreedy.png]]
+		- ![DRLeGreedy.png](../assets/DRLeGreedy.png)
 		- 这里需要用到 gaps 的知识，但是我们在实践中是没有的，因此我们实际的更新策略会更简单 $\epsilon_t=min\{1, starting\_epsilon /(t+1)\}$
 	- 算法伪代码
-		- ![[RLMB.png]]
+		- ![RLMB.png](../assets/RLMB.png)
 
 	- Lower Bound
 		- 任何算法的性能取决于最优臂与其他臂之间的相似性
@@ -53,14 +53,14 @@
 			- $a_t=argmax_{a\in A}\hat{Q_t}(a) + \hat{U_t}(a)$
 		- 然后就是得到 UCB1 算法
 			- 利用 Hoeffding‘s Inequality
-				- ![[Hoeffding.png]]
+				- ![Hoeffding.png](../assets/Hoeffding.png)
 			- 得到UCB1
-				- ![[UCB1.png]]
+				- ![UCB1.png](../assets/UCB1.png)
 		- 有上界
-			- ![[UCBLt.png]]
+			- ![UCBLt.png](../assets/UCBLt.png)
 
 		- 其伪代码
-			- ![[UCB1Code.png]]
+			- ![UCB1Code.png](../assets/UCB1Code.png)
 
 
 - Optimism 乐观
@@ -75,14 +75,14 @@
 - Contextual Bandits --- 可用作 推荐系统
 	- 之前所讲到的多臂老虎机，只研究当前动作，但是在情景式场景下还需要研究状态
 	- 定义
-		- ![[CB.png]]
+		- ![CB.png](../assets/CB.png)
 
 	- 推荐系统例子 --- 电影推荐
 		- 问题设置
-			- [[cs188-sp24-lec23.pdf#page=35]]
+			- [cs188-sp24-lec23.pdf](../Slides/cs188-sp24-lec23.pdf#page=35)
 		- 问题定义与解决
-			-  [[cs188-sp24-lec23.pdf#page=36-38]]
+			-  [cs188-sp24-lec23.pdf](../Slides/cs188-sp24-lec23.pdf#page=36-38)
 
 - RL --- Unknown MDPs
-	- 贪心解决 [[cs188-sp24-lec23.pdf#page=41]]
-	- 优化Rmax [[cs188-sp24-lec23.pdf#page=43]](乐观初始化，引入虚拟的天堂状态，算法会认为每个动作都是good的直到被现实打脸不断更新)
+	- 贪心解决 [cs188-sp24-lec23.pdf](../Slides/cs188-sp24-lec23.pdf#page=41)
+	- 优化Rmax [cs188-sp24-lec23.pdf](../Slides/cs188-sp24-lec23.pdf#page=43)(乐观初始化，引入虚拟的天堂状态，算法会认为每个动作都是good的直到被现实打脸不断更新)

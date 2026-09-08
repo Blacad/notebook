@@ -11,7 +11,7 @@
 		- 结束状态(optional)
 	- MDPs 是非确定性搜索问题，可以使用 expectimax search 解决，当然还有其它新工具
 	- 形态
-		- ![[MDP.png]]
+		- ![MDP.png](../assets/MDP.png)
 
 - Markov 马尔可夫
 	- 这是个人名，但是我们会用它表示 在给定当前状态的情况下，过去和未来条件独立
@@ -35,7 +35,7 @@
 	- 每个MDP状态对应一个类似expectimax的搜索树
 	- (s, a) 是一个 q-state 
 	- 形态
-		- ![[MDPSearchTree.png]]
+		- ![MDPSearchTree.png](../assets/MDPSearchTree.png)
 	- 由上知，我们可以使用 折扣效用计算 Sequence 的效用，即$U([r_0,r_1,...])=r_0+\gamma r_1 +\gamma^2 r_2+....$  其中，折扣系数discount factor $\gamma \in (0,1]$ 
 	- 无限效用问题
 		- 如果我们一直运行得到sequence不断增长那么可能会得到无限效用
@@ -70,7 +70,7 @@
 			- 有最大深度则收敛
 			- 折扣系数小于1 则收敛
 		- 图示与示例
-			- ![[values.png]]
+			- ![values.png](../assets/values.png)
 
 
 

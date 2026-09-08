@@ -1,0 +1,17 @@
+title: 计算机科学
+preserve_directory_names: true
+append_unmatched: true
+sort:
+  type: natural
+  by: filename
+  sections: first
+nav:
+  - index.md
+  - CS50
+  - CS61A
+  - CS70
+  - CS106L
+  - CS188
+  - 李宏毅机器学习 2022: 宏毅22
+  - 李宏毅生成式人工智能: 宏毅2526
+  - "*"

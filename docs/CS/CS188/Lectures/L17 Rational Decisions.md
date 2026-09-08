@@ -39,14 +39,14 @@
 		- 矩形是 action node
 		- 棱形是 utility node
 	- 例子
-		- 无证据![[DNExample.png]]
-		- 有证据![[DNExample2.png]]
+		- 无证据![DNExample.png](../assets/DNExample.png)
+		- 有证据![DNExample2.png](../assets/DNExample2.png)
 
 
 - Value of Information
 	- 计算获取证据的价值
 	- 例子
-		- ![[VOFExample.png]]
+		- ![VOFExample.png](../assets/VOFExample.png)
 	- VPI 特点
 		- 非负性
 		- 次可加
