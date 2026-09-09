@@ -5,3 +5,4 @@ __pycache__/
 .vscode/
 site/
 docs/CS/.obsidian/
+docs/CS/.obsidian/core-plugins.json

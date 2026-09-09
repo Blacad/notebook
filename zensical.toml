@@ -2,9 +2,9 @@
 site_name = "Blacad Docs"
 site_description = "Blacad 的个人文档笔记"
 site_author = "Blacad"
-site_url = "https://Blacad.github.io/blog/"
-repo_name = "Blacad/blog"
-repo_url = "https://github.com/Blacad/blog"
+site_url = "https://Blacad.github.io/notebook/"
+repo_name = "Blacad/notebook"
+repo_url = "https://github.com/Blacad/notebook"
 edit_uri = "edit/main/docs/"
 copyright = "Copyright &copy; 2026 Blacad"
 use_directory_urls = false
