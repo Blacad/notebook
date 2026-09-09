@@ -45,8 +45,8 @@
 
 - 1 x 1 Convolution
 	- [图示](../../Slides/Lecture6/FLOW.pdf#page=24)
-	- 输入是所有channel同一位置pixel构成的 tensor
-	- 输出是经过计算后对应位置各channel的pixel值
+	- 输入是所有channel同一pixel的tensor
+	- 输出是经过计算后所有channels对应pixel的tensor
 	- 1 x 1 Convolution可以shuffle channel
 	- 1 x 1 Convolution 的反函数和Jacobian det 比较好算
 	- [Jacobian det 计算](../../Slides/Lecture6/FLOW.pdf#page=25-26)
