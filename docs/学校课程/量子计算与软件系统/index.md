@@ -5,6 +5,8 @@
 > - 教师：卢丽强
 > - 教材：没有特定的参考教材，下面列出参考教材
 
+
+
 > [!ABSTRACT] 目录 
 > > - [x] [计算机体系结构简史与先进计算介绍](1.md) 
 > > - [x] [量子态与量子门](2.md) 
@@ -14,5 +16,9 @@
 
 
 
-- 本课程笔记来源于 (https://note.noughtq.top/misc/qc/)笔记，特别感谢
+- 本课程笔记来源于
+	- 仓库：https://github.com/noughtq/notebook
+	- 笔记url: https://note.noughtq.top/misc/qc/
+	- Author: noughtq
+	- 特别感谢
 - 我这里针对该份笔记进行一些小修改，可能更贴近 obsidian 原生 + Mkdocs 发布的样式，同时也会根据我的理解完善一些内容，相当于是上述笔记的 fork

@@ -22,7 +22,7 @@
             }
           },
           {
-            "id": "3d8b1fae7f6d9703",
+            "id": "09f7f7cf3b399eea",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -98,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d4cb8e3b1e4aa19c",
@@ -205,7 +204,7 @@
       "bases:新建数据库": false
     }
   },
-  "active": "3d8b1fae7f6d9703",
+  "active": "09f7f7cf3b399eea",
   "lastOpenFiles": [
     "量子计算与软件系统/1.md",
     "量子计算与软件系统/index.md",
