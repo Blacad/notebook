@@ -70,6 +70,9 @@ custom_checkbox = true
 [project.markdown_extensions.pymdownx.snippets]
 [project.markdown_extensions.md_in_html]
 [project.markdown_extensions.pymdownx.blocks.caption]
+[project.markdown_extensions.pymdownx.quotes]
+callouts = true
+
 
 [project.theme]
 custom_dir = "overrides"
