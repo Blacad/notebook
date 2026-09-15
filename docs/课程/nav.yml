@@ -1,0 +1,11 @@
+title: 学校课程
+preserve_directory_names: true
+append_unmatched: true
+sort:
+  type: natural
+  by: filename
+  sections: first
+nav:
+  - 说明.md
+  - 量子计算与软件系统:
+    - 量子计算与软件系统/index.md
