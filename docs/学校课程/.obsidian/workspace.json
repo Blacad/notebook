@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "高级体系结构/L1 处理器基本介绍.md",
+                "file": "道教文化/1 导论.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "L1 处理器基本介绍"
+              "title": "1 导论"
             }
           }
         ]
@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d4cb8e3b1e4aa19c",
@@ -161,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "高级体系结构/L1 处理器基本介绍.md",
+                "file": "道教文化/1 导论.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,8 +191,14 @@
   },
   "active": "db9620352d576b42",
   "lastOpenFiles": [
-    "量子计算与软件系统/1 计算机体系结构简史与先进计算介绍.md",
+    "道教文化/images/lec1",
+    "道教文化/index.md",
+    "道教文化/1 导论.md",
+    "量子计算与软件系统/index.md",
     "高级体系结构/L1 处理器基本介绍.md",
+    "道教文化/images",
+    "道教文化",
+    "量子计算与软件系统/1 计算机体系结构简史与先进计算介绍.md",
     "高级体系结构/index.md",
     "量子计算与软件系统/2 量子态与量子门.md",
     "量子计算与软件系统/3 量子测量与量子图灵机.md",
@@ -210,7 +217,6 @@
     "高级体系结构/L5 GPU&MXMACA基础.md",
     "高级体系结构/L7 MXMACA内存管理.md",
     "高级体系结构/L2 AI算力基础.md",
-    "量子计算与软件系统/index.md",
     "量子计算与软件系统/5 量子纠错.md",
     "量子计算与软件系统/4 量子算法.md",
     "高级体系结构/images/L1/4.png",
