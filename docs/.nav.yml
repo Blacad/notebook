@@ -9,7 +9,5 @@ ignore:
   - board.md
 nav:
   - 首页: index.md
-  - "💻 CS":
-    - CS/说明.md
-  - "📖 学校课程":
-    - 学校课程/说明.md
+  - "💻 CS": CS
+  - "📖 学校课程": 学校课程
