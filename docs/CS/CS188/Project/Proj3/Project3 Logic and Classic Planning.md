@@ -11,6 +11,7 @@
 
 ## 总结
 ------ basic logic
+
 - Q1 --- 理解 命题逻辑学基本工具的实现和用法
 	- sentence 1-3 帮助了解 `Expr` 和 `PropSymbolExpr` 如何使用
 	- `findModelUnderstandingCheck()` 帮助了解 `SAT` 解析器如何使用或者说 `Expr` 如何能被 `SAT` 处理
@@ -38,7 +39,9 @@
 	- 其实就是更改为food 的 `GoalAssert` 以及 添加 food 的`SuccessorAxiom` 就好了，其它与Q4一致
 
 ------------ localization\mapping\slam
+
 - 以下是知道全局大小的
+
 - Q6 --- 实现 `localization` 
 	- 问题描述：Pacman从一个已知的地图开始，但起始位置未知。它有一个4位传感器，可以返回其N、S、E、W方向是否存在墙壁。例如，1001表示贪吃蛇的北和西方向有墙壁，这4位使用一个包含4个布尔值的列表来表示。通过跟踪这些传感器读数和在每个时间步采取的动作，Pacman能够确定自己的位置。你需要编写帮助贪吃蛇确定在每个时间步可能位置的代码句子
 	- 这题的坑挺多的
