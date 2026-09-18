@@ -6,3 +6,4 @@ __pycache__/
 site/
 docs/CS/.obsidian/
 docs/CS/.obsidian/core-plugins.json
+node_modules/

@@ -41,8 +41,8 @@ title: "Blacad 的笔记本"
       <ul class="simple-home__links">
         <li><a href="CS/CS61A/说明.md">CS61A：程序构造</a></li>
         <li><a href="CS/CS70/说明.md">CS70：离散数学与概率论</a></li>
-        <li><a href="学校课程/量子计算与软件系统/说明.md">量子计算的理论与实践</a></li>
-        <li><a href="学校课程/道教文化/说明.md">道教哲学与文化</a></li>
+        <li><a href="学校课程/量子计算与软件系统/index.md">量子计算的理论与实践</a></li>
+        <li><a href="学校课程/道教文化/index.md">道教哲学与文化</a></li>
       </ul>
     </section>
   </div>
