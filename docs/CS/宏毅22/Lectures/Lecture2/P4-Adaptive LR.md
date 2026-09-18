@@ -14,7 +14,7 @@
 			- 用于 Adagrad
 			- 可以看到 gradient 小时，$\sigma$ 就小，等价于调大学习率；gradient 大时，$\sigma$ 就大，等价于调小学习率
 		- RMSProp
-			- 公式 $\sigma_i^{t}=\sqrt{\alpha (\sigma_i^{t-1})^2+(1-\alpha)(g_{i}^{t})^2}$
+			- 公式 $\sigma_i^{t}=\sqrt{\alpha (\sigma_i^{t-1})^2+(1-\alpha)(g_{i}^{t})^2}$ --- EMA 指数滑动平均
 			- 相比与 Adagrad 有所改进，近期梯度影响更大，过去梯度影响较小(类似于TD)
 
 	- 如今最常用的优化策略 --- [Adam = RMSProp + Momentum](../../Slides/Lecture2/optimizer_v4P4.pdf#page=11)

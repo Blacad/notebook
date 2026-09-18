@@ -30,7 +30,10 @@
 	- Nadam 2016年 --- NAG + Adam 
 		- [Optimization](../../Slides/Lecture2/OptimizationS2+3.pdf#page=49)
 
-- AdamW --- 解决 L2 正则化的问题
+- ***AdamW --- 解决 L2 正则化的问题***
+	- 为了让 神经网络 表征的函数尽可能平滑(error surface)，需要对损失加上 L2 正则化这一项，即 $+\lambda \sum (w_i)^2$ ，这在 SGD 中没有问题，但是当采用 Adam 时 L2正则化损失的梯度并不以预期形式传导回参数(由于 momentum和v)
+	- 因此  ***AdamW 直接用 weight_decay 衰减参数，而不需要 L2 正则化损失再回传梯度修改***
+
 
 - 一些其它优化
 	- Shuffling

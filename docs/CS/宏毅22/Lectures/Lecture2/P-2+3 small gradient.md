@@ -21,3 +21,4 @@
 - Momentum 动量
 	- 用来解决 local 问题的，它依据物理中惯性的概念冲破 local 
 	- [momentum](../../Slides/Lecture2/small-gradientP-2+3.pdf#page=33) --- 实践中 momentum 被视作更新的单元而不是单纯的梯度
+		- $m_t = \beta m_{t-1} + g_t$
