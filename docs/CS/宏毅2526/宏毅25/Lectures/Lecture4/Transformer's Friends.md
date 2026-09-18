@@ -1,10 +1,12 @@
 
 每种架构的存在都有其意义
+
 - CNN --- 根据image的特性减少不必要的参数
 - Residual --- 使得梯度更平缓
 - RNN、Attention --- 建立序列内的相关性
 
 序列架构
+
 - [RNN-style12-13](../../Slides/Lecture4/mamba.pdf#page=12-13)
 	- 优势：上下文的增长并不会带来单点计算/存储开销上涨(fixed固定大小H)
 	- 劣势：需要按序列顺序计算
@@ -15,6 +17,7 @@
 随着 对超长序列的追求(Agent/RAG) 比如 1M等，Attention 的劣势逐渐显现，对RNN的呼喊又回来了
 
 RNN 并行化
+
 - [原始RNN](../../Slides/Lecture4/mamba.pdf#page=33)
 	- 一连串的 function 难以并行
 - [RNN_v1](../../Slides/Lecture4/mamba.pdf#page=34)
@@ -33,6 +36,7 @@ RNN 并行化
 	- [图示](../../Slides/Lecture4/mamba.pdf#page=39)
 
 Linear Attention 无法战胜 Attention
+
 - 可能原因：RNN的存储能力不如Attention
 	- 如果RNN的hidden state 是 $d * d_{model}$，那么最多存 d 个不干扰的 $d_{model}$ 信息
 	- 但是 Attention 也存在同样的问题，比如 序列的长度 t 超过了 v 的维度 $d$，那么它也只能表征 $d$ 个维度 的互不干扰的信息
@@ -49,6 +53,7 @@ Linear Attention 无法战胜 Attention
 
 
 DeltaNet
+
 - DeltaNet 也是上述的Linear Attention的一种形式，非常有趣
 	- DeltaNet 公式 - $H_t = H_{t-1}(I-\beta_t k_t k_t^T) + \beta_t v_t k_t^T$
 	- DeltaNet 的思维
@@ -62,13 +67,16 @@ DeltaNet
 
 
 Linear Attention vs Attention
+
 - Linear Attention 只需要保留固定的 $H$ 存储过去的 kv 信息，不会随着序列的增长，存储预算不会很大
 - Attention 就不必说了，序列越长 KV cache 的历史信息就越长
 
 两种思考 Linear Attention 的方式
+
 - 之前22年讲过 Attention 推 [Linear Attention](../../../../宏毅22/Lectures/Lecture5/C1%20各种%20self-attention.md)
 - 这里是 RNN 推 Linear Attention
 - 我更青睐后者的理解，前者不本质
 
 即使研究基模模型架构也不要从头训练，而是直接套用预训练好的模型参数，再加上你自己的设计
+
 - [不要从头训练](../../Slides/Lecture4/mamba.pdf#page=62)
