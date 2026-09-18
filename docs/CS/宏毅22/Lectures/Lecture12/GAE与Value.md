@@ -33,7 +33,9 @@ $$V_t^{target} = r_t + \gamma(1-\lambda)V_{t+1} + \gamma\lambda r_{t+1} + \gamma
 
 现在定义 n-step return：
 $$G_t^{(1)} = r_t+\gamma V_{t+1} $$
+
 $$G_t^{(2)} = r_t+\gamma r_{t+1}+\gamma^2V_{t+2}$$
+
 $$G_t^{(3)} = r_t+\gamma r_{t+1} +\gamma^2r_{t+2} +\gamma^3V_{t+3}$$
 
 那么考虑：
@@ -66,8 +68,11 @@ $$\gamma^2\lambda^2r_{t+2}$$
 
 而 bootstrap value 项则分别是：
 
+
 $$\gamma(1-\lambda)V_{t+1}$$
+
 $$\gamma^2\lambda(1-\lambda)V_{t+2} $$
+
 $$\gamma^3\lambda^2(1-\lambda)V_{t+3}$$
 
 这与前面从 GAE 展开得到的形式完全一致。
@@ -76,7 +81,9 @@ $$\gamma^3\lambda^2(1-\lambda)V_{t+3}$$
 
 $$\boxed{ V_t+\hat A_t^{GAE} = (1-\lambda) \sum_{n=1}^{\infty} \lambda^{n-1}G_t^{(n)} }$$
 
-这就是所谓的 $$\lambda-return$$
+这就是所谓的 
+
+$$\lambda-return$$
 
 直觉上也很好理解：
 
