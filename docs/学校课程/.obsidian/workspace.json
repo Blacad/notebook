@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "34b7f471c61199f6",
+        "id": "549fe3c2fc4dc4c4",
         "type": "tabs",
         "children": [
           {
-            "id": "2cb015c66d69af3c",
+            "id": "2996989a3d7b8bc0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "自然语言处理/1 导论.md",
+                "file": "高级体系结构/L4 GPU&CUDA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1 导论"
-            }
-          },
-          {
-            "id": "644b121cbe830001",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "自然语言处理/index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
+              "title": "L4 GPU&CUDA"
             }
           }
         ]
@@ -203,53 +189,53 @@
       "bases:新建数据库": false
     }
   },
-  "active": "2cb015c66d69af3c",
+  "active": "2996989a3d7b8bc0",
   "lastOpenFiles": [
+    "量子计算与软件系统/2 量子态与量子门.md",
+    "量子计算与软件系统/3 量子测量与量子图灵机.md",
+    "量子计算与软件系统/4 量子算法.md",
+    "量子计算与软件系统/1 计算机体系结构简史与先进计算介绍.md",
+    "量子计算与软件系统/lab Qiskit.md",
+    "量子计算与软件系统/index.md",
+    "说明.md",
+    "高级体系结构/L1 处理器基本介绍.md",
+    "高级体系结构/L4 GPU&CUDA.md",
+    "高级体系结构/images/L4/5.png",
+    "高级体系结构/images/L4/6.png",
+    "高级体系结构/images/L4/4.png",
+    "高级体系结构/images/L4/3.png",
+    "高级体系结构/images/L4/2.png",
+    "高级体系结构/images/L4/1.png",
+    "高级体系结构/images/L4",
+    "高级体系结构/L3 GPU&MUSA.md",
+    "高级体系结构/L2 AI算力基础.md",
+    "道教文化/2 老子与道德经.md",
+    "道教文化/index.md",
+    "道教文化/1 导论.md",
     "自然语言处理/index.md",
     "自然语言处理/1 导论.md",
-    "高级体系结构/L1 处理器基本介绍.md",
-    "量子计算与软件系统/1 计算机体系结构简史与先进计算介绍.md",
     "高级体系结构/index.md",
-    "道教文化/1 导论.md",
     "自然语言处理",
-    "说明.md",
-    "道教文化/index.md",
-    "量子计算与软件系统/index.md",
     "道教文化/images/lec1",
     "道教文化/images",
     "道教文化",
-    "量子计算与软件系统/2 量子态与量子门.md",
-    "量子计算与软件系统/3 量子测量与量子图灵机.md",
     "高级体系结构/L16 Cache预取与NVMe.md",
     "高级体系结构/L15 MXMACA矩阵乘与Agent优化.md",
     "高级体系结构/L12 具身智能优化.md",
     "高级体系结构/L10 大模型推理优化.md",
     "高级体系结构/L8 MXMACA程序优化.md",
     "高级体系结构/L6 MXMACA编程调试.md",
-    "高级体系结构/L4 GPU&CUDA.md",
-    "高级体系结构/L3 GPU&MUSA.md",
     "高级体系结构/L14 MXMACA内存访问优化.md",
     "高级体系结构/L13 MXMACA SIMT.md",
     "高级体系结构/L11 Agent优化.md",
-    "高级体系结构/L9 阿里云.md",
-    "高级体系结构/L5 GPU&MXMACA基础.md",
-    "高级体系结构/L7 MXMACA内存管理.md",
-    "高级体系结构/L2 AI算力基础.md",
     "高级体系结构/images/L1/4.png",
     "高级体系结构/images/L1/5.png",
     "高级体系结构/images/L1/3.png",
     "高级体系结构/images/L1/2.png",
-    "高级体系结构/images/L1/1.png",
     "高级体系结构/images/L1",
     "高级体系结构/images",
     "高级体系结构",
-    "量子计算与软件系统/images/lec5/9.png",
-    "量子计算与软件系统/images/lec5/8.png",
-    "量子计算与软件系统/images/lec5/7.png",
-    "量子计算与软件系统/images/lec5/6.png",
-    "量子计算与软件系统/images/lec5/5.png",
     "量子计算与软件系统/images/lec5",
-    "量子计算与软件系统/images/lec4",
-    "量子计算与软件系统/images/lec3"
+    "量子计算与软件系统/images/lec4"
   ]
 }

@@ -21,4 +21,4 @@
 	- 笔记url: https://note.noughtq.top/misc/qc/
 	- Author: noughtq
 	- 特别感谢
-- 我这里针对该份笔记进行一些小修改，可能更贴近 obsidian 原生 + Mkdocs 发布的样式，同时也会根据我的理解完善一些内容，相当于是上述笔记的 fork
+- 我这里针对该份笔记进行一些小修改，可能更贴近 obsidian + Zensical 发布的样式，同时也会根据我的理解完善一些内容，相当于是上述笔记的 fork，后续我发现，既要满足 Obsidian 原生 又想要 Zensical 一些比较好的可视化功能是非常困难的，因此还是贴近 Zensical 吧
