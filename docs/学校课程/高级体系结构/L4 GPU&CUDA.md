@@ -25,7 +25,7 @@ GPU 简史
 - ILP 指令并行 vs SIMT线程并行
 	- CPU 是 ILP 指令并行，乱序执行与分支预测的指令级并行
 	- GPU 是 SIMT 单指令多线程，单指令多线程并行
-	- ![](高级体系结构/images/L4/5.png)
+	- ![](images/L4/5.png)
 
 GPU体系结构
 
