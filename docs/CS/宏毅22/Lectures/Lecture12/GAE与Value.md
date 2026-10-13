@@ -38,7 +38,7 @@ $$G_t^{(2)} = r_t+\gamma r_{t+1}+\gamma^2V_{t+2}$$
 
 $$G_t^{(3)} = r_t+\gamma r_{t+1} +\gamma^2r_{t+2} +\gamma^3V_{t+3}$$
 
-那么考虑：
+那么考虑 $\lambda$-return：
 
 $$(1-\lambda)\left[ G_t^{(1)} +\lambda G_t^{(2)} +\lambda^2G_t^{(3)} +\cdots \right]$$
 

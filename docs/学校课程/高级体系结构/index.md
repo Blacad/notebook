@@ -9,8 +9,8 @@
 
 > [!ABSTRACT] 目录 
 > > - [x] [处理器基本介绍](L1%20处理器基本介绍.md) 
-> > - [ ]  [AI算力基础](L2%20AI算力基础.md) 
-> > - [ ] 
-> > - [ ] 
-> > - [ ] 
+> > - [x]  [AI算力基础](L2%20AI算力基础.md) 
+> > - [x] GPU&MUSA
+> > - [x] GPU&CUDA
+> > - [x] [GPU&MXMACA 基础](L5%20GPU&MXMACA%E5%9F%BA%E7%A1%80.md)
 

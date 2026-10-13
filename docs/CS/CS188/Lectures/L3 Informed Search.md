@@ -68,7 +68,7 @@
 	- 将已有的Tree Search 拓展为Graph Search，只需要  ==Tree Search + the set of expanded states(closed set)==，每当拓展state时就先看一眼closed set
 	- 当引入 closed set 后，我们再反观 Heuristics，它需要比Admissible==更强的性质 Consistency==
 		- Consistency --- 启发式“弧”成本 ≤ 每个弧的实际成本 即 $h(A) - h(C) ≤ cost(A \to C)$
-		- 比如 A、C、G，A到C实际cost是1，C到G实际cost是3，A的h是4，C的h是3，虽然 Admissible，但是不 Consistency
+		- 比如 A、C、G，A到C实际cost是1，C到G实际cost是3，A的h是4，C的h是2，虽然 Admissible，但是不 Consistency
 		- 其实 Consistency使得我们path上的 F 值是非递减的
 	- ==如果采用 Consistent Heuristic，那么 Graph Search 版本的 A\* 依然是 Optimal 的==
 	- Tree Search

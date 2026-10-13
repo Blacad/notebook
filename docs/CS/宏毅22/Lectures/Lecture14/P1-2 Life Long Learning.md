@@ -1,7 +1,7 @@
 
 - Life long learning(lll)
 	- [lll的基本思想](../../Slides/Lecture14/life_v2.pdf#page=4)
-	- lll 的重大难题 --- [灾难性遗忘](../../Slides/Lecture14/life_v2.pdf#page=6-9)
+	- lll 的重大难题 --- [灾难性遗忘6-9](../../Slides/Lecture14/life_v2.pdf#page=6)
 		- 在学完 task 2 后，它会遗忘 task 1
 		- 但是它 同时学多种任务(multi-task training)，它表现的效果会比 串行学多种任务的平均效果好
 		- 因此，常常会把 multi-task training 视作 lll 的 upper bound
@@ -16,7 +16,7 @@
 	- [LLL 的 任务序列](../../Slides/Lecture14/life_v2.pdf#page=14)
 		- 第一行是对 Task 1 的数字图片进行不同的规则处理得到后续 Task
 		- 第二行更粗暴，就是把数字识别任务拆开
-	- [评估方式](../../Slides/Lecture14/life_v2.pdf#page=15-16)
+	- [评估方式15-16](../../Slides/Lecture14/life_v2.pdf#page=15)
 		- 每学完一个 Task 就在每个任务上测一次准确率
 
 

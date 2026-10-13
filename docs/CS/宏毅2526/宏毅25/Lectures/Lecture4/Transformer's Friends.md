@@ -7,7 +7,7 @@
 
 序列架构
 
-- [RNN-style12-13](../../Slides/Lecture4/mamba.pdf#page=12-13)
+- [RNN-style12-13](../../Slides/Lecture4/mamba.pdf#page=12)
 	- 优势：上下文的增长并不会带来单点计算/存储开销上涨(fixed固定大小H)
 	- 劣势：需要按序列顺序计算
 - [Attention-style](../../Slides/Lecture4/mamba.pdf#page=17)
@@ -44,7 +44,7 @@ Linear Attention 无法战胜 Attention
 - 更可能的原因 - 少了 Reflection 记忆永不变
 	- Linear Attention 没有 Reflection 的过程
 	- Attention 中 softmax 相当于做了 Reflection 
-	- 那么 让 Linear Attention 加上 Reflection 的过程 -> [Retention Network49-50](../../Slides/Lecture4/mamba.pdf#page=49-50) -> [Gated Retention51-52](../../Slides/Lecture4/mamba.pdf#page=51-52) -> [更复杂的Reflection](../../Slides/Lecture4/mamba.pdf#page=53)
+	- 那么 让 Linear Attention 加上 Reflection 的过程 -> [Retention Network49-50](../../Slides/Lecture4/mamba.pdf#page=49) -> [Gated Retention51-52](../../Slides/Lecture4/mamba.pdf#page=51) -> [更复杂的Reflection](../../Slides/Lecture4/mamba.pdf#page=53)
 		- [相关的工作图示](../../Slides/Lecture4/mamba.pdf#page=55) 已经汗牛充栋了
 			- 图示同时记录了它们的公式方便查看
 		- 其中 Mamba 能力很强，似乎真能打赢Transformer
@@ -58,7 +58,7 @@ DeltaNet
 	- DeltaNet 公式 - $H_t = H_{t-1}(I-\beta_t k_t k_t^T) + \beta_t v_t k_t^T$
 	- DeltaNet 的思维
 		- 原始Linear Attention $H_t = H_{t-1} + v_t k_t^T$
-		- 想去除部分过去的值再把新的值放进去
+		- 想去除部分过去的值再把新的值放进去(想提取出新值中真正新的部分)
 			- $H_t = H_{t-1}-\beta v_{t,old}k_t^T+ \beta v_t k_t^T$
 			- $v_{t,old}=H_{t-1}k_t$
 			- 整理得到 $H_t = H_{t-1}-\beta_k (H_{t-1}k_t - v_t )k_t^T$ -> 很像*Gradient Descent*

@@ -1,4 +1,6 @@
 
+***Possessing memory and growing limbs***
+
 ## 基础
 
 AI Agent
@@ -30,7 +32,7 @@ AI Agent 例子
 
 - 目前的互动大多都是 *回合制*
 - 真实的互动应该是 *即时互动*
-- [图示24-25](../../Slides/Lecture2/ai_agent.pdf#page=24-25)
+- [图示24-25](../../Slides/Lecture2/ai_agent.pdf#page=24)
  - 我感觉这里的互动定义其实有点模糊，其实就是 选择 不管新obs 还是 接受被打断
 
 
@@ -49,7 +51,7 @@ Agent Memory 的 三个重要组件
 - Read - RAG
 - Write
 - Reflection(Knowledge Graph)
-- [图示40-41](../../Slides/Lecture2/ai_agent.pdf#page=40-41)
+- [图示40-41](../../Slides/Lecture2/ai_agent.pdf#page=40)
 
 
 ## 利用工具

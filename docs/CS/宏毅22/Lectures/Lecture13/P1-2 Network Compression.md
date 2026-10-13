@@ -19,13 +19,13 @@
 	- 为什么用剪枝呢
 		- Lottery Ticket Hypothesis 彩票假说
 			- 可以想象 大的model 包含许多小的model，只要其中一个小 model 成功，那么 大的model 就有成功的理论可能
-			- [实验验证](../../Slides/Lecture13/tiny_v7.pdf#page=12-13)
+			- [实验验证12-13](../../Slides/Lecture13/tiny_v7.pdf#page=12)
 				- 初始权重的正负号至关重要
 			- [反对彩票假说](../../Slides/Lecture13/tiny_v7.pdf#page=14)
 
 
 - Knowledge Distillation 知识蒸馏
-	- [蒸馏的基本做法](../../Slides/Lecture13/tiny_v7.pdf#page=16-17)
+	- [蒸馏的基本做法16-17](../../Slides/Lecture13/tiny_v7.pdf#page=16)
 	- [Temperature for softmax](../../Slides/Lecture13/tiny_v7.pdf#page=18)
 		- 让 Sharp 的分布变得平缓一些
 
@@ -41,7 +41,7 @@
 - Architecture Design
 	- 著名方法
 		- Depthwise Separable Convolution
-			- [基本做法](../../Slides/Lecture13/tiny_v7.pdf#page=26-27)
+			- [基本做法26-27](../../Slides/Lecture13/tiny_v7.pdf#page=26)
 				- Depthwise Convolution
 					- 标准CNN中的 filter 应该是一个立方体，它的 channel 应该和输入的channel一样，然后每个 filter 产生输出的一个channel
 					- Depthwise Convolution 的 filter 只是一个平面，它的每个 filter 只能看到输入的 单个 channel 的信息，同样每个filter 产生输出的一个channel

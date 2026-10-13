@@ -18,7 +18,7 @@
 - 由另一个学习模块决定哪些地方需要计算 attention score --- [Sinkhorn Sorting Network](../../Slides/Lecture5/C1xformer%20%28v8%29.pdf#page=15)
 
 
-- [Linformer](../../Slides/Lecture5/C1xformer%20%28v8%29.pdf#page=16-18)
+- [Linformer16-18](../../Slides/Lecture5/C1xformer%20%28v8%29.pdf#page=16)
 	- 完整的 attention matrix 中有很多列都是重复的或者可以由其他列线性组合得到，因此整个 attention matrix 是 low rank 的，因此可以尝试将完整的 attention matrix 压缩为更 low rank 的形式
 	- 具体做法，挑选 K 个最具代表性的 value 以及 K 个 最具代表性的 key，然后做正常的 self-attention
 	- 选择最具代表性的 key 和 value 可以使用 CNN 选择

@@ -20,7 +20,7 @@
 
 - Policy Gradient 策略梯度
 	- 可以控制 Actor 在各种状态下对于采取或不采取何种动作的倾向，比如利用交叉熵[做法如图](../../Slides/Lecture12/drl_v5.pdf#page=16)
-	- [训练数据与目标如图](../../Slides/Lecture12/drl_v5.pdf#page=18-19)
+	- [训练数据与目标如图18-19](../../Slides/Lecture12/drl_v5.pdf#page=18)
 		- 关键问题
 			- A 怎么决定
 			- 怎么更好采集数据
@@ -95,9 +95,9 @@
 			- [Inverse RL](../../Slides/Lecture12/drl_v5.pdf#page=58)
 				- 假设：老师总是最好的
 				- 由  专家示范轨迹 去学习出 Reward Function
-			- [IRL的框架](../../Slides/Lecture12/drl_v5.pdf#page=59-60)
+			- [IRL的框架59-60](../../Slides/Lecture12/drl_v5.pdf#page=59)
 				- 可以看到 IRL 很像 GAN
-		- [相关工作](../../Slides/Lecture12/drl_v5.pdf#page=62-63)
+		- [相关工作62-63](../../Slides/Lecture12/drl_v5.pdf#page=62)
 			- Guided Cost Learning
 			- Skew-Fit
 			- RIG

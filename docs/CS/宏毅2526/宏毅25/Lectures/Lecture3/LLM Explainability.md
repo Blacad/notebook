@@ -1,4 +1,7 @@
 
+***Understanding oneself from the subtle to the macroscopic***
+
+
 ## 一个神经元
 
 从矩阵视角看，单神经元近似是某层权重矩阵的一列/行
@@ -10,7 +13,7 @@
 - 移除神经元
 - 不同程度激活神经元
 
-[川普神经元18-19](../../Slides/Lecture3/model_inside.pdf#page=18-19)
+[川普神经元18-19](../../Slides/Lecture3/model_inside.pdf#page=18)
 
 单神经元很难解释最终输出，往往是 多对多 的情形，即 一个任务与多个神经元有关，而 一个神经元与多个任务有关
 
@@ -18,7 +21,7 @@
 
 ## 一层神经元
 层神经元近似看成某层的权重矩阵
- ***功能向量 FV***
+ ***功能向量 FV&SAE***
 
 抽取某种功能向量
 
@@ -72,7 +75,7 @@
 Residual Stream 视角
 
 - 从 [残差流视角](../../Slides/Lecture3/model_inside.pdf#page=79) 看，其实通过每层都只不过是向 原始输入中 改变某些讯息
-- 因此，其实每一层的输出都是透明的，我们都可以将其解码出来[图示](../../Slides/Lecture3/model_inside.pdf#page=80)
+- 因此，其实每一层的输出都是透明的，我们都可以将其解码出来[图示](../../Slides/Lecture3/model_inside.pdf#page=80)， 该方法称为 Logit Lens
 
 Transformer Feed-Forward Layers Are Key-Value Memories https://arxiv.org/abs/2012.14913
 
@@ -80,8 +83,8 @@ Transformer Feed-Forward Layers Are Key-Value Memories https://arxiv.org/abs/201
 
 当然，你的每个输出其实是预测下一个位置的token的，因此中间状态的意义应该在于它对下一个输出字的能力体现 + 对原有信息的核心保留，Patchscopes 给出了很好的方式
 
-- Patchscopes 给出了 一个方案 + 一个洞见
-	- 方案 - [Patchscopes方法91-92](../../Slides/Lecture3/model_inside.pdf#page=91-92)
+- Patchscopes 给出了 一个方法 + 一个洞见
+	- 方法 - [Patchscopes方法](../../../HW/Hw4/hw4.pdf#page=16)
 	- 洞见 - [LLM似乎是按层逐步解析的](../../Slides/Lecture3/model_inside.pdf#page=93)
 	-  https://arxiv.org/pdf/2401.06102
 

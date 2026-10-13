@@ -7,7 +7,7 @@
 	- ...
 
 
-- [Pre-train Model](../../Slides/Lecture7/S1+2BERT%20train%28v8%29.pdf#page=7-13)
+- [Pre-train Model7-13](../../Slides/Lecture7/S1+2BERT%20train%28v8%29.pdf#page=)
 	- 在 ELMo 等之前就已经有，它是将每个 token 重表示为 embedding vector
 	- 但是前期比较粗糙几乎不考虑上下文信息，比如 Word2vec仅仅考虑基础的上下文信息
 	- 发展到后来就是 Contextualized Word Embedding (RNN或者self-attention等)
@@ -30,7 +30,7 @@
 			- 在 预测下一个token的情形中使用 self-attention 需要小心，不要让模型看到它要生成的内容，否则可能引起作弊(causal attention)
 	
 	- BERT 可采用不同 Masking Input策略 进行多种预训练
-		- [SpanBERT](../../Slides/Lecture7/S1+2BERT%20train%28v8%29.pdf#page=54-56) 是其中比较出名的
+		- [SpanBERT54-56](../../Slides/Lecture7/S1+2BERT%20train%28v8%29.pdf#page=54) 是其中比较出名的
 	
 	- BERT 不适合给定部分序列，预测下一个Token
 	
@@ -41,7 +41,7 @@
 		- 将 BERT、GPT 和 Seq2Seq 进行结合
 		- 我私认为 BERT 适合理解和填空任务，GPT适合生成任务，Seq2Seq适合机器翻译等任务
 
-	- [Replace or Not](../../Slides/Lecture7/S1+2BERT%20train%28v8%29.pdf#page=65-66)
+	- [Replace or Not65-66](../../Slides/Lecture7/S1+2BERT%20train%28v8%29.pdf#page=65)
 		- 判断各 token 是否应该被替换
 
 - Sequence Level 

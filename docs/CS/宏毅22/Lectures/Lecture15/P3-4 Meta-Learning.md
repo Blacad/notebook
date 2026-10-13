@@ -13,7 +13,7 @@
 		- 部分超参数的修改可能不用重新训练模型，而有些超参数的修改可能需要重新训练模型
 		- 但其实我认为用的最多的似乎就是 grid search
 
-- [ML vs Meta](../../Slides/Lecture15/meta_v3.pdf#page=24-31)
+- [ML vs Meta24-31](../../Slides/Lecture15/meta_v3.pdf#page=24)
 	- 我觉得这张图很好对比 [ML vs Meta](../../Slides/Lecture15/meta_v3.pdf#page=28)
 
 

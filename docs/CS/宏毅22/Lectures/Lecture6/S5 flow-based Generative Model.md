@@ -15,7 +15,7 @@
 		- [图示](../../Slides/Lecture6/FLOW.pdf#page=9)
 	- Change of Variable Theorem 变量替换定理
 		- 原始随机变量出自一个分布，该随机变量经过 Operator 后形成另一个计算后分布，需要探究 计算后分布和原始分布的关系
-		- [图示](../../Slides/Lecture6/FLOW.pdf#page=12-14)
+		- [图示12-14](../../Slides/Lecture6/FLOW.pdf#page=12)
 
 - 回到 计算 生成分布和数据分布的最大似然 的问题
 	- 可以依据 变量替换定理 得到 生成数据的分布，然后就可以计算与目标数据分布的最大似然了
@@ -49,7 +49,7 @@
 	- 输出是所有channels同一pixel经过计算的tensor
 	- 1 x 1 Convolution可以shuffle channel
 	- 1 x 1 Convolution 的反函数和Jacobian det 比较好算
-	- [Jacobian det 计算](../../Slides/Lecture6/FLOW.pdf#page=25-26)
+	- [Jacobian det 计算25-26](../../Slides/Lecture6/FLOW.pdf#page=25)
 
 
 - flow-based GM的典型

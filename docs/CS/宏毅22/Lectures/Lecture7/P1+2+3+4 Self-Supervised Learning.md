@@ -2,7 +2,7 @@
 ## BERT Series
 - self-supervised 自监督
 	- 对于没有标签的数据，让数据自身组成 标签
-	- [Masking Input](../../Slides/Lecture7/P1+2+3+4bert_v8.pdf#page=11-12)
+	- [Masking Input11](../../Slides/Lecture7/P1+2+3+4bert_v8.pdf#page=11)
 		- 随机 mask 输入的部分 token
 		- mask 有两种做法
 			- mask 作为 special token
@@ -25,9 +25,9 @@
 - BERT 的 四种用法示例
 	- Task 1: [Sequence to Label](../../Slides/Lecture7/P1+2+3+4bert_v8.pdf#page=17)
 	- Task 2: [Sequence Labeling](../../Slides/Lecture7/P1+2+3+4bert_v8.pdf#page=20)
-	- Task 3:  [Natural Language Inference(NLI)](../../Slides/Lecture7/P1+2+3+4bert_v8.pdf#page=21-22)
+	- Task 3:  [Natural Language Inference(NLI)21-22](../../Slides/Lecture7/P1+2+3+4bert_v8.pdf#page=21)
 		- 输入 前提和假设，输出 一个类别 (矛盾/不矛盾)
-	- Task 4: [Extraction-based QA](../../Slides/Lecture7/P1+2+3+4bert_v8.pdf#page=23-25)
+	- Task 4: [Extraction-based QA23-25](../../Slides/Lecture7/P1+2+3+4bert_v8.pdf#page=23)
 		- 答案一定出现在文本中
 
 - Training BERT is Challenge
