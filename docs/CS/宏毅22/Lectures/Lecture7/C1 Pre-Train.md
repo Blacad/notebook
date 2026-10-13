@@ -24,7 +24,7 @@
 		4. zero-shot
 	2. PLM Big -> Reduce the parameters
 		1. Distillation 蒸馏
-		2. Pruning [剪枝](剪枝.md)
+		2. Pruning 剪枝 --- 在 Lecture 13 network compression 中有详细介绍
 		3. shared parameters
 		4. Parameter-Efficient Fine-tuning
 			1. [Adapter](../../Slides/Lecture7/C1PLM.pdf#page=83)

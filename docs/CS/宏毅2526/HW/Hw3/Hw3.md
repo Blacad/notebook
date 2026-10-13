@@ -64,7 +64,7 @@ Understanding Transformer
 	- 下载别人针对 `gemma-2-2b-it` 特定层训练好的 SAE，然后我们只需要把 特定层的 hidden_state 提供给这个 SAE
 	-  `sae.encode(hidden_state)`
 		- (B,L,D) -> (B,L, num_features)
-		- 得到 对于 decoder 的所有feature的激活值，更详细的内容请查看 [SAE&FV](../../宏毅25/Lectures/Lecture3/SAE&FV)
+		- 得到 对于 decoder 的所有feature的激活值，更详细的内容请查看 [SAE&FV](../../宏毅25/Lectures/Lecture3/SAE&FV.md)
 
 
 - Note
