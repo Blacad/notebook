@@ -14,4 +14,5 @@
 
 - 总结
 	- GQA 是 按KV分组，一组KV共享多个Q，因此 GQA 的逻辑是多个 Q 共享的静态 KV memory
+		- GQA 的一个关键考量就是 能够 ==缓解KV Cache== 的压力，可见 []()
 	- DeltaNet 是按QK分组，一组QK共享多个V，因此 DeltaNet 的逻辑是Q/K 是一套读写地址空间，保持相同 head 划分最自然

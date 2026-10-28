@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f5c73baeb006432d",
+        "id": "4694f6b521c196b8",
         "type": "tabs",
         "children": [
           {
-            "id": "4648802c0731eab2",
+            "id": "342d0a75adb1d523",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "说明.md",
+                "file": "高级体系结构/L7 MXMACA内存管理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "说明"
+              "title": "L7 MXMACA内存管理"
             }
           }
         ]
@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d4cb8e3b1e4aa19c",
@@ -180,19 +181,31 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1791723797805-2t8dh4t",
-                      "conversationId": "conv-1791859215610-p6majl1eg"
-                    },
-                    {
-                      "tabId": "tab-1791860334774-e9in5r1",
-                      "conversationId": "conv-1791860409708-8xpo8fzaf"
-                    },
-                    {
                       "tabId": "tab-1791861778650-rrfljej",
                       "conversationId": "conv-1791861809804-cegz0958l"
+                    },
+                    {
+                      "tabId": "tab-1791866891246-ou5ynic",
+                      "conversationId": "conv-1791868424986-z01zb733c"
+                    },
+                    {
+                      "tabId": "tab-1793080432315-wkvmmbh",
+                      "conversationId": "conv-1793080588589-x4rtr1ny3"
+                    },
+                    {
+                      "tabId": "tab-1793080602546-y2ehvs1",
+                      "conversationId": "conv-1793080608951-omgbd09mw"
+                    },
+                    {
+                      "tabId": "tab-1793080735051-g9tb93b",
+                      "conversationId": "conv-1793080741018-l1nt5bqb0"
+                    },
+                    {
+                      "tabId": "tab-1793080963726-qk0z4nt",
+                      "conversationId": "conv-1793080992331-nfrh4bhb9"
                     }
                   ],
-                  "activeTabId": "tab-1791861778650-rrfljej"
+                  "activeTabId": "tab-1793080963726-qk0z4nt"
                 }
               },
               "icon": "bot",
@@ -204,7 +217,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 709.2890625
+    "width": 817.56640625,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,52 +232,52 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "4648802c0731eab2",
+  "active": "342d0a75adb1d523",
   "lastOpenFiles": [
-    "道教文化/4 管子.md",
-    "高级体系结构/L2 AI算力基础.md",
-    "高级体系结构/L3 GPU&MUSA.md",
-    "高级体系结构/L4 GPU&CUDA.md",
-    "高级体系结构/L5 GPU&MXMACA基础.md",
+    "高级体系结构/L8 MXMACA程序优化.md",
+    "高级体系结构/L7 MXMACA内存管理.md",
+    "高级体系结构/images/L7/padding.png",
+    "高级体系结构/【第7节】MXMACA内存模型和内存管理.pdf",
+    "高级体系结构/【第8节】MXMACA程序的共享内存管理.pdf",
+    "高级体系结构/images/L7/reduction.png",
+    "高级体系结构/images/L7/transpose-padding.png",
+    "高级体系结构/images/L7/bank-datatype.png",
+    "高级体系结构/images/L7/bank-conflict.png",
+    "高级体系结构/images/L7/memory-model.png",
+    "高级体系结构/images/L7/memory-hierarchy.png",
+    "高级体系结构/images/L7",
+    "高级体系结构/【第5节】MXMACA编程语言特性和运行时库.pdf",
     "高级体系结构/L6 MXMACA编程调试.md",
+    "高级体系结构/images/L6/debug-workflow.png",
+    "高级体系结构/images/L6/toolchain.png",
+    "高级体系结构/images/L6/event-timing.png",
+    "高级体系结构/images/L6",
+    "高级体系结构/【课前预习3】MXMACA编程进阶.pdf",
+    "高级体系结构/【第6节】MXMACA程序分析和调试工具.pdf",
+    "高级体系结构/L5 GPU&MXMACA基础.md",
+    "道教文化/index.md",
+    "道教文化/1 导论.md",
+    "道教文化/2 老子与道德经.md",
+    "道教文化/3 庄子.md",
+    "道教文化/4 管子.md",
+    "高级体系结构/index.md",
+    "高级体系结构/L4 GPU&CUDA.md",
+    "高级体系结构/L3 GPU&MUSA.md",
+    "高级体系结构/L2 AI算力基础.md",
+    "高级体系结构/proj/project2/Proj2.md",
+    "高级体系结构/proj/project3/Proj3.md",
+    "高级体系结构/proj/project3",
+    "高级体系结构/proj/project1/Proj1.md",
+    "高级体系结构/proj/project2/kernel1.cpp",
+    "高级体系结构/proj/project2/kernel 1.cpp",
+    "说明.md",
     "自然语言处理/index.md",
     "自然语言处理/1 导论.md",
     "自然语言处理/2 Intro.md",
     "自然语言处理/3 word embedding.md",
-    "自然语言处理/3. Word Embeddings-1.0(1).pdf",
-    "自然语言处理/2. Deep Learning Basics(3).pdf",
-    "高级体系结构/GPU_Programming_with_MXMACA_Part_1.pdf",
-    "高级体系结构/【课前预习2】MXMACA编程基础.pdf",
-    "高级体系结构/【第3节】曦云GPU产品和MXMACA编程基础.pdf",
-    "高级体系结构/images/L5/3d.png",
-    "高级体系结构/images/L5/gpu_io.png",
-    "高级体系结构/images/L5/paradigm.png",
-    "高级体系结构/images/L5/product.png",
-    "高级体系结构/images/L5/memory.png",
-    "高级体系结构/images/L5/index.png",
-    "高级体系结构/images/L5/hetero.png",
-    "高级体系结构/images/L5/command.png",
-    "高级体系结构/images/L5/kiss.png",
-    "高级体系结构/images/L5/solution.png",
-    "高级体系结构/images/L5",
-    "高级体系结构/render_l5.py",
-    "高级体系结构/render.py",
-    "高级体系结构/extract.py",
-    "高级体系结构/pdfcheck.py",
     "高级体系结构/L1 处理器基本介绍.md",
-    "高级体系结构/index.md",
-    "道教文化/index.md",
-    "道教文化/3 庄子.md",
-    "道教文化/2 老子与道德经.md",
     "道教文化/images/未命名.md",
-    "道教文化/1 导论.md",
     "高级体系结构/program/2 CUDA C++ Intro.md",
-    "高级体系结构/program/3 SIMT Kernels.md",
-    "高级体系结构/proj/project1/Proj1.md",
-    "高级体系结构/program/A5.4 Language Extensions.md",
-    "高级体系结构/proj/project2/Proj2.md",
-    "高级体系结构/program/说明.md",
-    "高级体系结构/program/1 Pre-requisite.md",
-    "高级体系结构/program/0 Introduction.md"
+    "高级体系结构/program/3 SIMT Kernels.md"
   ]
 }

@@ -36,7 +36,7 @@
 		- 而 SUPO 则是训练模型做 LLM summary 任务，由于我们没有 压缩后的 context 的 gold truth，因此采用 强化学习 的方式训练
 
 - 压缩的时机
-	- 模型不喜欢压缩上下文，即使你给模型提供了压缩上下文的工具，它可能也不会主动去调用，因此大多数 Harness 都是当上下文达到固定长度时强制执行压缩
+	- 模型不喜欢压缩上下文，即使你给模型提供了压缩上下文的工具，它可能也不会主动去调用，因此大多数 Harness 都是当上下文达到固定长度时强制要求模型执行压缩
 		- [论文](https://arxiv.org/abs/2509.23586)
 	- [AgentFold](https://arxiv.org/abs/2510.24699)
 		- 训练模型去 使用压缩工具
@@ -68,5 +68,6 @@
 	- [Agentic Context Engineering](https://arxiv.org/abs/2510.04618)
 	- [Recursive Language Models](https://arxiv.org/abs/2512.24601)
 
+- 学完这节后，更能体会到为什么要用 循环transformer了，能有效节省上下文
 
 

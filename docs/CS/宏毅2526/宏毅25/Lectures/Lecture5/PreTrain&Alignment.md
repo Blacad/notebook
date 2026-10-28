@@ -5,7 +5,7 @@
 	- PreTrain
 		- 通常就是 Language Modeling，需要非常大量的资料(TB-PB级别)
 	- Alignment
-		- Alignment可以理解为 finetune 通常包含 SFT 和 RLHF/VR，需要的资料不必很多(less is enough)，但是(回答)质量需要较高(quality is all)，资料量往往 1k-50k 之间
+		- Alignment可以理解为 finetune 通常包含 SFT 和 RLHF/VR，需要的资料不必很多(less is enough)，但是(回答)质量需要较高(quality is all)，资料量往往 10k-100k 之间 [LLaMA2的经验](https://arxiv.org/abs/2307.09288)
 		- SFT 后模型的能力就已经很强了，RL 对模型能力的提升不再明显
 	- Alignment 后会使得模型的可用性大大提升
 
