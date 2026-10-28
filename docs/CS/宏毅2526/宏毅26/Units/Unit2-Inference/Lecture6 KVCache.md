@@ -4,7 +4,7 @@
 	- **Prefill**：并行处理整个 prompt，建立各层的 KV Cache；**Decode**：每步只处理新 token，计算它的 Q、K、V，将新 K、V 追加到缓存。
 	- 当前 query 仍需与全部可见的 K、V 做 attention；只是不用重新计算旧 token。旧 Q 后续不会再用到，所以不缓存。
 	- 第 $t$ 个位置的 attention：$o_t=\operatorname{softmax}(q_tK_{1:t}^{\top}/\sqrt{d_k})V_{1:t}$。
-	- ![新 query 读取历史 KV 与当前 KV（PDF 第31页）](lecture6-kvcache-decode.png)
+	- ![新 query 读取历史 KV 与当前 KV（PDF 第31页）](../../assets/Unit2/lecture6-kvcache-decode.png)
 
 - 代价：缓存占显存，读取缓存也有开销
 	- [显存与数据搬运：Slides 34–35](../../Slides/Unit2/inference.pdf#page=34)
@@ -18,7 +18,7 @@
 	- **MQA（Multi-Query Attention）**：所有 query heads 共用一套 K、V，缓存最省，但可能影响模型能力。
 	- **GQA（Grouped-Query Attention）**：query heads 分组，每组共享一套 K、V，在缓存大小与模型能力之间折中；缓存量约为 MHA 的 $H_{kv}/H_q$。
 	- 这属于模型结构改变，需要配套训练，不是推理时直接打开缓存就能得到的效果。
-	- ![MQA 与 GQA 的 KV 共享方式（PDF 第37页）](lecture6-kvcache-mqa-gqa.png)
+	- ![MQA 与 GQA 的 KV 共享方式（PDF 第37页）](../../assets/Unit2/lecture6-kvcache-mqa-gqa.png)
 
 - 压缩 KV：MLA（Multi-head Latent Attention）
 	- [原理与推导：Slides 38–43](../../Slides/Unit2/inference.pdf#page=38)
@@ -38,8 +38,8 @@
 	- 在模型和计算设置一致时，不同请求可复用**完全相同前缀**的 KV，减少重复 prefill；不是缓存最终回答。
 	- 一旦前缀出现差异，后面即使又出现相同 token，也不能直接复用：它们依赖的上下文已经不同。
 	- Prompt 编排：**稳定内容放前面，变化内容放后面**，如固定 system prompt、工具说明在前，用户问题和变量在后，可提高命中率。
-	- ![共享前缀可以复用，分叉后的相同字也不能直接复用（PDF 第49页）](lecture6-kvcache-prefix.png)
+	- ![共享前缀可以复用，分叉后的相同字也不能直接复用（PDF 第49页）](../../assets/Unit2/lecture6-kvcache-prefix.png)
 
-- 和 [[Lecture5 FlashAttention]] 的区别
+- 和 [Lecture5 FlashAttention](Lecture5%20FlashAttention.md) 的区别
 	- **FlashAttention**：减少 attention 计算过程中的 HBM ↔ SRAM 搬运；**KV Cache**：避免生成时反复计算历史 token。两者可以配合使用。
 	- [总结：Slide 55](../../Slides/Unit2/inference.pdf#page=55)：普通 KV Cache 不改变原有 attention、不需重训，代价是显存；共享/压缩 KV 改结构，窗口/剪枝则减少可见历史，需要权衡模型效果。

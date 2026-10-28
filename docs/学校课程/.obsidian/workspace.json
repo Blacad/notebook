@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "高级体系结构/L7 MXMACA内存管理.md",
+                "file": "高级体系结构/proj/project1/Proj1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "L7 MXMACA内存管理"
+              "title": "Proj1"
             }
           }
         ]
@@ -234,8 +234,8 @@
   },
   "active": "342d0a75adb1d523",
   "lastOpenFiles": [
-    "高级体系结构/L8 MXMACA程序优化.md",
     "高级体系结构/L7 MXMACA内存管理.md",
+    "高级体系结构/L8 MXMACA程序优化.md",
     "高级体系结构/images/L7/padding.png",
     "高级体系结构/【第7节】MXMACA内存模型和内存管理.pdf",
     "高级体系结构/【第8节】MXMACA程序的共享内存管理.pdf",

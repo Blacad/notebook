@@ -85,7 +85,7 @@ main.cpp的文件里的“parallel_sum_V1”基于上述方法已经实现了一
 
 #### kernel.cpp：无原子分段求和与逐步优化
 
-参考源码：[[高级体系结构/proj/project2/kernel.cpp|kernel.cpp]]、[[高级体系结构/proj/project2/kernel1.cpp|kernel1.cpp]]；基础概念见 [GPU 并行编程的基本知识](../../program/2%20CUDA%20C++%20Intro.md)。
+基础概念见 [GPU 并行编程的基本知识](../../program/2%20CUDA%20C++%20Intro.md)
 
 ##### 1. 先明确输出与索引
 
