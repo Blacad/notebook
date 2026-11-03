@@ -6,7 +6,7 @@
 
 - Lambda：带状态的局部可调用对象
 	- [Slides 23–27](../Slides/WL8_Functions.pdf#page=23)
-	- 基本语法是 `[captures](parameters) { body; }`；编译器产生闭包类型，lambda 表达式创建闭包对象。
+	- 基本语法是 `[captures] (parameters) { body; }`；编译器产生闭包类型，lambda 表达式创建闭包对象。
 	- 它不是“运行时重新编译一段函数代码”；运行时可创建带不同捕获值的对象，调用逻辑早已编译。
 	- `auto` 保存具体闭包类型；C++14 的 generic lambda 可以在参数中用 auto，内部相当于模板化调用接口。
 	- ![lambda 可以直接写在使用处，保存为 auto 对象再调用（PDF 第24页）](../assets/lecture08-slide24.png)
@@ -38,6 +38,6 @@
 		std::vector<int> values{1, 4, 7, 9};
 		int limit = 6;
 		auto n = std::count_if(values.begin(), values.end(),
-		                       [limit](int x) { return x < limit; });
+		                       [limit] (int x) { return x < limit; });
 		```
 	- 读代码时按“容器数据 → iterator 区间 → algorithm → predicate / capture”拆解；比单独背每个函数名更容易迁移。
