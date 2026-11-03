@@ -25,7 +25,7 @@
 	- 常用 Bradley–Terry 模型：$P(y_w\succ y_l\mid x)=\sigma(r_\phi(x,y_w)-r_\phi(x,y_l))$，对成对数据做负对数似然训练。
 	- 策略优化常写成 $\max_\pi\mathbb E_{x,y\sim\pi}[r_\phi(x,y)]-\beta\mathbb E_xD_{KL}(\pi(\cdot\mid x)\Vert\pi_{ref}(\cdot\mid x))$。
 	- 奖励鼓励偏好行为，KL 约束模型不要离 reference 太远；reference 与 PPO 用于重要性比率的旧策略不是同一个概念。
-	- PPO 在当前/近期策略采样的回答上更新，用 advantage 降低方差、clipping 限制过大更新；具体实现见 [[CS336/Lectures/Lecture16 RLVR and Reasoning.md|Lecture16]]。
+	- PPO 在当前/近期策略采样的回答上更新，用 advantage 降低方差、clipping 限制过大更新；具体实现见 [Lecture16](Lecture16%20RLVR%20and%20Reasoning.md)。
 
 - DPO：用隐式奖励，直接训练偏好
 	- [Slides 54–61](../Slides/lecture_15.pdf#page=54)

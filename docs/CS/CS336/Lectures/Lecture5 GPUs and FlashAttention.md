@@ -7,7 +7,7 @@
 
 - Roofline：先确定瓶颈属于哪一边
 	- [Slides 20–29](../Slides/lecture_05.pdf#page=20)
-	- 延续 [[CS336/Lectures/Lecture2 Resource Accounting.md|Lecture2]]：比较计算强度 $F/Q$ 与硬件算力/带宽之比，而不只数数学运算。
+	- 延续 [Lecture2](Lecture2%20Resource%20Accounting.md)：比较计算强度 $F/Q$ 与硬件算力/带宽之比，而不只数数学运算。
 	- **低精度**可同时减少数据量并利用更高的低精度矩阵吞吐；但要处理缩放、异常值与累积误差，实际混合精度方案往往并非所有权重都用同一种格式。
 	- 算力增长快于带宽增长，使“让数据留在离 SM 更近的地方”越来越重要。
 

@@ -37,4 +37,4 @@
 	- [讲义：`torch_distributed()`、`main()`](../Slides/lecture_07.py)
 	- 讲义重点是通信原语和最小 MLP 示例，不是可直接用于大模型的完整训练框架；TP / PP 示例的反向传播留作练习，也没有完整隐藏通信开销。
 	- 实际训练还需正确清零梯度、同步随机初始化、处理异步通信和 checkpoint；所有 rank 必须按一致的通信协议参与，否则可能死锁。
-	- 下一讲 [[CS336/Lectures/Lecture8 Distributed Training.md|Distributed Training]] 将加入状态分片、调度与多种并行的组合。
+	- 下一讲 [Distributed Training](Lecture8%20Distributed%20Training.md) 将加入状态分片、调度与多种并行的组合。

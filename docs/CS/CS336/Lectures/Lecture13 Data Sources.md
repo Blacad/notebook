@@ -39,5 +39,5 @@
 	- **The Stack / Stack v2** 系统处理代码、元数据、PR 等；除了去重，还涉及二进制、恶意软件、PII 与结构化内容转换。
 	- **Common Pile** 探索只使用开放许可/公有领域等来源训练模型的路径，来源涵盖代码、公共文档、学术资料、图书等。
 	- 仍要防范错误标注许可、“许可洗白”和下游重新分发限制；数据集名字或总 license 不能替代逐来源审查。
-	- 下一讲 [[CS336/Lectures/Lecture14 Data Processing.md|Data Processing]] 关注共同算法：抽取、过滤、MinHash 去重、混合与合成。
+	- 下一讲 [Data Processing](Lecture14%20Data%20Processing.md) 关注共同算法：抽取、过滤、MinHash 去重、混合与合成。
 	- ![Common Pile 的来源构成，展示开放数据并非只有百科与网页（讲义原图）](../assets/lecture13-commonpile.png)

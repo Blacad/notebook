@@ -37,6 +37,6 @@
 - 从第一讲连接到实践
 	- [讲义：`basics()`、`scaling_laws()`](../Slides/lecture_01.py)
 	- 作业 1 的主线是实现 BPE、Transformer、交叉熵、AdamW 与训练循环，再在给定预算下优化验证集 perplexity。
-	- 训练计算量常粗估为 $C\approx6ND$，$N$ 是参数量、$D$ 是训练 token 数；这个近似的适用条件见 [[CS336/Lectures/Lecture2 Resource Accounting.md|Lecture2]]。
-	- 后续不是只把 $N$ 变大，而是同时选择模型、训练长度、数据与系统方案；[[CS336/Lectures/Lecture9 Scaling Laws.md|Lecture9]] 会讨论 IsoFLOPs 曲线如何指导选择。
+	- 训练计算量常粗估为 $C\approx6ND$，$N$ 是参数量、$D$ 是训练 token 数；这个近似的适用条件见 [Lecture2](Lecture2%20Resource%20Accounting.md)。
+	- 后续不是只把 $N$ 变大，而是同时选择模型、训练长度、数据与系统方案；[Lecture9](Lecture9%20Scaling%20Laws.md) 会讨论 IsoFLOPs 曲线如何指导选择。
 	- ![固定计算预算下寻找最佳参数量，再外推到更大规模（讲义原图）](../assets/lecture01-chinchilla-isoflop.png)

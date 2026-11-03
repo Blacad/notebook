@@ -28,4 +28,4 @@
 	- [Slides 39–43](../Slides/CS61C%202024Fa%20L04%20C3%20Memory.pdf#page=39)
 	- 分配器维护空闲块，需要查找、切分、合并，并记录元数据；外部碎片是空闲空间不连续，内部碎片是分配块内的浪费。
 	- First-fit、best-fit 等策略有不同开销与碎片特征；程序员应避免不必要的细粒度分配，但不能假设某种策略永远最好。
-	- 对照 [[CS106L/Lectures/Lecture15 RAII and Smart Pointers.md|C++ 的 RAII]]：它把释放责任放到类型生命周期；C 则通常要明确设计清理路径与所有权约定。
+	- 对照 [C++ 的 RAII](../../CS106L/Lectures/Lecture15%20RAII%20and%20Smart%20Pointers.md)：它把释放责任放到类型生命周期；C 则通常要明确设计清理路径与所有权约定。

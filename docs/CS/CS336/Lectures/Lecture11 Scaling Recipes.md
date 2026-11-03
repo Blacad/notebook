@@ -1,6 +1,6 @@
 - Scaling Recipe：预测的不只是 loss，还有超参数怎么变
 	- [Slides 2–5、30](../Slides/lecture_11.pdf#page=2)
-	- [[CS336/Lectures/Lecture9 Scaling Laws.md|Lecture9]] 讲模型与数据的最优分配；这一讲追问：初始化、learning rate、batch 和 schedule 在放大时是否仍合适？
+	- [Lecture9](Lecture9%20Scaling%20Laws.md) 讲模型与数据的最优分配；这一讲追问：初始化、learning rate、batch 和 schedule 在放大时是否仍合适？
 	- 一次小模型调参不能自动覆盖大模型。要定义**从计算预算到一整套训练配置的映射**，再检验其 scaling 曲线。
 	- 比较方法时必须公平调参；换 optimizer 却沿用另一种 optimizer 的最优 LR，容易得出错误结论。
 

@@ -40,5 +40,5 @@
 - 一套更清晰的所有权选择顺序
 	- [Slides 39、50–70](../Slides/WL15_RAII.pdf#page=39)
 	- 能直接按值放就按值放；需要动态独占时用 unique_ptr；确实共享生命周期才用 shared_ptr；非拥有访问用适当的引用/指针或 weak_ptr。
-	- 资源包装器自己解决释放，业务类组合这些成员，便能实践 [[CS106L/Lectures/Lecture13 Special Member Functions.md|Rule of Zero]]。
+	- 资源包装器自己解决释放，业务类组合这些成员，便能实践 [Rule of Zero](Lecture13%20Special%20Member%20Functions.md)。
 	- RAII 的目标不是“所有东西放在栈上”，而是让**拥有资源的对象**有可靠生命周期；它管理的资源完全可以位于堆上。

@@ -37,7 +37,7 @@
 
 - 系统与扩展：MoE 的收益不是免费的
 	- [Slides 44–60](../Slides/lecture_04.pdf#page=44)
-	- **Expert Parallelism** 把专家放到不同 GPU，token dispatch 与结果回收依赖 All-to-all；需要足够的网络带宽与负载均衡，详见 [[CS336/Lectures/Lecture8 Distributed Training.md|Lecture8]]。
+	- **Expert Parallelism** 把专家放到不同 GPU，token dispatch 与结果回收依赖 All-to-all；需要足够的网络带宽与负载均衡，详见 [Lecture8](Lecture8%20Distributed%20Training.md)。
 	- **Upcycling**：从稠密模型初始化多个专家，再继续训练，降低从零开始训练 MoE 的成本；还要处理专家同质化与微调过拟合。
 	- **MLA** 压缩 KV Cache，**MTP** 增加未来 token 预测目标、也可支持推测解码；它们与 MoE 是可组合的不同模块，不是 MoE 的同义词。
 	- 比较 MoE 时至少同时报告总/激活参数、训练 tokens、FLOPs、实际吞吐与设备数量；“参数大很多、计算差不多”不等于部署成本相同。

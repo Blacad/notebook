@@ -22,4 +22,4 @@
 - 做题时记录状态，而不只记录答案
 	- [Slides 1](../Slides/caches.pdf#page=1)
 	- 每次访问写下 block number、set、tag、hit/miss、victim、dirty 与替换次序，再处理下一个地址。
-	- 完整公式与例子回看 [[CS61C/Lectures/Lecture25 Caches II.md|Lecture25]]、[[CS61C/Lectures/Lecture26 Caches III.md|Lecture26]]、[[CS61C/Lectures/Lecture27 Caches IV.md|Lecture27]]。
+	- 完整公式与例子回看 [Lecture25](Lecture25%20Caches%20II.md)、[Lecture26](Lecture26%20Caches%20III.md)、[Lecture27](Lecture27%20Caches%20IV.md)。

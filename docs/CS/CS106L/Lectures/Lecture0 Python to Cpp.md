@@ -37,4 +37,4 @@
 	- [入门指南第4页](../Slides/Welcome%20to%20C%2B%2B%21.pdf#page=4)
 	- 指南中的 `Vector`、`stringSplit`、`getLine`、`getInteger`、`randomInteger` 来自 Stanford 库，不是装好任意 C++ 编译器就自带。
 	- 标准库用 `std::vector`、`std::getline` 等接口，大小写、头文件和语义都要核对，不能机械替换名字。
-	- `s.find(...)` 找不到时返回 `std::string::npos`，不是 Python 的 `-1`；C++ 的复制、引用和生命周期也与 Python 不同，见 [[CS106L/Lectures/Lecture3 Initialization and References.md|Lecture3]]。
+	- `s.find(...)` 找不到时返回 `std::string::npos`，不是 Python 的 `-1`；C++ 的复制、引用和生命周期也与 Python 不同，见 [Lecture3](Lecture3%20Initialization%20and%20References.md)。

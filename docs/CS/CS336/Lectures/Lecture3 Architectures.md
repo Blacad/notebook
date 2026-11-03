@@ -25,7 +25,7 @@
 	- 将 Q、K 每两维组成一组，按位置 $m$ 旋转：$\tilde q_m=R_mq_m$、$\tilde k_n=R_nk_n$；V 通常不旋转。
 	- $\tilde q_m^T\tilde k_n=q_m^TR_{n-m}k_n$，所以内积中的位置因子只依赖相对位移。
 	- 与把正余弦向量加到 embedding 不同，RoPE 不引入同样的内容—位置加法交叉项；但**相对结构不等于天然长文本外推，也不保证距离越远 attention 越小**。
-	- 推导与上下文扩展可回看 [[宏毅2526/宏毅26/Units/Unit3-Position&Harness/Lecture7 Position Embedding.md|Position Embedding]]。
+	- 推导与上下文扩展可回看 [Position Embedding](../../%E5%AE%8F%E6%AF%852526/%E5%AE%8F%E6%AF%8526/Units/Unit3-Position&Harness/Lecture7%20Position%20Embedding.md)。
 	- ![RoPE 用分块二维旋转矩阵编码位置（PDF 第34页）](../assets/lecture03-slide34.png)
 
 - 超参数：先用保守基线，再做消融
@@ -39,4 +39,4 @@
 	- Softmax 对大 logit 敏感：**z-loss** 约束 log-partition，**QK Norm** 控制 Q、K 尺度，**Soft-capping** 用 $c\tanh(z/c)$ 限制 logit 范围；它们作用位置不同。
 	- **MHA** 每个 query head 有独立 KV；**MQA** 所有 query heads 共用一组 KV；**GQA** 介于两者之间，主要节省 decode 的 KV Cache 与读取带宽。
 	- Sliding Window / Sparse Attention 减少访问范围；交错局部层与全局层，在成本和长距离信息之间折中。
-	- 不要混淆：GQA 改变 KV 结构，稀疏 attention 改变连接范围，[[CS336/Lectures/Lecture5 GPUs and FlashAttention.md|FlashAttention]] 则优化给定 attention 的计算与 IO。
+	- 不要混淆：GQA 改变 KV 结构，稀疏 attention 改变连接范围，[FlashAttention](Lecture5%20GPUs%20and%20FlashAttention.md) 则优化给定 attention 的计算与 IO。

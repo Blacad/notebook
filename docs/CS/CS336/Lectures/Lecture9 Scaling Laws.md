@@ -15,7 +15,7 @@
 	- [Slides 21–27](../Slides/lecture_09.pdf#page=21)
 	- 训练来源与测试目标不同，分布偏移会改变可达到的损失；小规模最优的数据混合不一定能直接迁移到大规模。
 	- **重复数据不等于新增独立数据**：重复训练仍可能有益，但边际价值下降，不能把累计 token 数无条件当成同等质量的有效数据。
-	- 高质量集合太小，训练久了会反复 epoch；大预算下可能需要放宽过滤、提高多样性。见 [[CS336/Lectures/Lecture14 Data Processing.md|Lecture14]]。
+	- 高质量集合太小，训练久了会反复 epoch；大预算下可能需要放宽过滤、提高多样性。见 [Lecture14](Lecture14%20Data%20Processing.md)。
 
 - 模型与数据联合扩展：预算应该花在哪里？
 	- [Slides 28–45](../Slides/lecture_09.pdf#page=28)

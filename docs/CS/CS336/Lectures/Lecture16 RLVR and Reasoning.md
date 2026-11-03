@@ -45,6 +45,6 @@
 - Agent RL：环境工程与系统利用率也是算法的一部分
 	- [Slides 45–46、55–61](../Slides/lecture_16.pdf#page=45)
 	- Agent 把单轮回答扩展到工具调用与多步执行；代码任务需要仓库、依赖、测试和可重置环境，奖励要反映真实完成度并防止投机。
-	- 推理 rollout 慢、轨迹长度不齐、训练与生成切换频繁；需要调度、批处理和权重同步等系统设计，连接到 [[CS336/Lectures/Lecture10 Inference.md|Lecture10]]。
+	- 推理 rollout 慢、轨迹长度不齐、训练与生成切换频繁；需要调度、批处理和权重同步等系统设计，连接到 [Lecture10](Lecture10%20Inference.md)。
 	- 最后应一起报告效果、生成成本、训练成本与环境条件，而不是只报告训练 reward。
 	- ![RL 系统在 rollout、奖励计算、buffer 与训练 worker 间组织计算（PDF 第45页）](../assets/lecture16-slide45.png)
