@@ -23,7 +23,7 @@
 - 修改 Harness：生成 → 检查 → 修正，不保证越改越好
 	- [Slides 32–43](../../Slides/Unit4/Self-Correction.pdf#page=32)
 	- 在初答后加入“再检查一下”等 reflection instruction，给模型重新生成答案的机会；
-	- **仅靠内部反思**与**获得外部反馈**的效果应分开评量，[论文]([https://arxiv.org/pdf/2510.16062](https://arxiv.org/pdf/2510.16062))发现 **外部反馈** 往往能对修正答案起到更大作用
+	- **仅靠内部反思**与**获得外部反馈**的效果应分开评量，[论文](https://arxiv.org/pdf/2510.16062)发现 **外部反馈** 往往能对修正答案起到更大作用
 	- 既要把错的改对，也要避免把对的改错；这里的 CL 是正确答案保留率
 		- 同时关注两种转移：$CL=P(\text{修正后对}\mid\text{原本对})$，$CS=P(\text{修正后对}\mid\text{原本错})$。
 		- 修正后准确率：$ACC_2=ACC_1\cdot CL+(1-ACC_1)\cdot CS$。

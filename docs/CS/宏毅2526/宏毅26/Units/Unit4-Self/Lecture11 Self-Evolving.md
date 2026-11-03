@@ -1,7 +1,7 @@
 - Self-Evolving Agent：成长的不只是模型参数
 	- [Slides 3–10](../../Slides/Unit4/self-evolving-agent.pdf#page=3)
 	- **Agent = Harness + LLM**：记为 $A_{\theta,h}$，$\theta$ 是模型参数，$h$ 是 prompt、记忆管理、工具与工作流等外部机制。
-	- [[宏毅2526/宏毅26/Units/Unit4-Self/Lecture10 Self-Improving.md|上一讲]] 主要讨论自动生成训练数据与信号；这一讲扩展到**改进 Harness，以及改进“如何改进”**。
+	- 上一讲 主要讨论自动生成训练数据与信号；这一讲扩展到**改进 Harness，以及改进“如何改进”**。
 	- Harness 常由文字、代码和流程组成，不能把课件中的“对 $h$ 求梯度”示意直接理解为普通反向传播，通常要靠生成、搜索与评估。
 
 - 如何优化 Harness：生成候选 → 执行评估 → 保留有效改动

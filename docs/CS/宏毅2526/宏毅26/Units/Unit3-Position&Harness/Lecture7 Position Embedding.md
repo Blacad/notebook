@@ -27,7 +27,7 @@
 	- 设旋转后的 query 为 $\tilde q_m=R_mq_m$，key 为 $\tilde k_n=R_nk_n$，则
 		- $\tilde k_n^T\tilde q_m=k_n^TR_n^TR_mq_m=k_n^TR_{m-n}q_m$。
 	- **用绝对位置做旋转，内积中的位置因素却只依赖相对位移 $m-n$**；内容不变时，两个位置一起平移，分数不变。
-	- 与 [[宏毅2526/宏毅26/Units/Unit2-Inference/Lecture6 KVCache.md|KV Cache]] 配合：固定频率和位置编号时，历史 K 旋转后即可缓存，不必每次为新 query 重新旋转历史 K；attention 仍是 QK 内积。
+	- 与 [KVCache](../Unit2-Inference/Lecture6 KVCache.md) 配合：固定频率和位置编号时，历史 K 旋转后即可缓存，不必每次为新 query 重新旋转历史 K；attention 仍是 QK 内积。
 	- **RoPE 不保证 attention 随距离单调减小**：旋转后的内积还取决于 Q、K 的方向与内容，不能简单理解为“越远越不重要”。
 	- **RoPE** 和 ALiBi 是同时期的产物，**RoPE** 更加美观与 KV cache 配合完美，因此现在往往会用 RoPE
 	- ![RoPE 将向量分成二维组，按不同频率旋转（PDF 第31页）](../../assets/Unit3/lecture7-rope-rotation.png)

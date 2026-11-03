@@ -23,7 +23,7 @@
 		```cpp
 		std::vector<int> values{1, 2, 3, 4};
 		values.erase(std::remove_if(values.begin(), values.end(),
-		                            [](int x) { return x % 2 == 0; }),
+		                            [] (int x) { return x % 2 == 0; }),
 		             values.end());
 		```
 	- `stable_partition` 按 predicate 分两组并保留组内相对顺序；`nth_element` 确定第 n 个排序位置，不保证全区间有序。
