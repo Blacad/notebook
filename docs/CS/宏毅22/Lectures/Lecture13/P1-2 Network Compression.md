@@ -42,11 +42,12 @@
 	- 著名方法
 		- Depthwise Separable Convolution
 			- [基本做法26-27](../../Slides/Lecture13/tiny_v7.pdf#page=26)
-				- Depthwise Convolution
+				- ==Depthwise Convolution==
 					- 标准CNN中的 filter 应该是一个立方体，它的 channel 应该和输入的channel一样，然后每个 filter 产生输出的一个channel
 					- Depthwise Convolution 的 filter 只是一个平面，它的每个 filter 只能看到输入的 单个 channel 的信息，同样每个filter 产生输出的一个channel
-				- Pointwise Convolution
+				- ==Pointwise Convolution==
 					- 由于 filter 只能看到同 channel 的信息，因此再引入 pointwise filter，它的 channel 与 输入的 channel 一样，但是平面只是 1 x 1 的，这是因为它的职责是跨channel 信息，同 channel 信息已经处理好了
+				- Depthwise -> Pointwise
 			- [节省计算](../../Slides/Lecture13/tiny_v7.pdf#page=28)
 	- Low rank approximation
 		- M x N <-> M x K · K x N

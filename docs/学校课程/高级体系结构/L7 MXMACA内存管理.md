@@ -19,12 +19,12 @@
 
 ![](images/L7/memory-hierarchy.png)
 
-| 层次 | CPU | GPU |
-| ---------- | ------------------------------------- | ---------------------------------------- |
-| 寄存器 | — | — |
-| L1 / L2 | 32KB+512KB，3GHz SRAM，5~12 cycles | 16/32/48KB，80 cycles |
-| 末级缓存 | L3 12~24MB，2GHz SRAM，25~35 cycles，200~400GB/s | L2 1~4MB，200~300 cycles，500~1000GB/s |
-| 主存 | DRAM 32~128GB，2GHz DDR4，200+ cycles，60~120GB/s | HBM 4~80GB，5GHz GDDR5，200~300 cycles，250~500GB/s |
+| 层次      | CPU                                            | GPU                                              |
+| ------- | ---------------------------------------------- | ------------------------------------------------ |
+| 寄存器     | —                                              | —                                                |
+| L1 / L2 | 32KB+512KB，3GHz SRAM，5~12 cycles               | 16/32/48KB，80 cycles                             |
+| 末级缓存    | L3 12~24MB，2GHz SRAM，25~35 cycles，200~400GB/s  | L2 1~4MB，200~300 cycles，500~1000GB/s             |
+| 主存      | DRAM 32~128GB，2GHz DDR4，200+ cycles，60~120GB/s | HBM 4~80GB，5GHz GDDR5，200~300 cycles，250~500GB/s |
 
 > [!important] CPU 与 GPU 内存的关键差异
 > GPU **带宽更高、延迟更大、缓存更少**。更本质的区别：GPU 编程模型把内存层次**显式暴露给程序员**（可用 API 控制），CPU 则一般不提供。

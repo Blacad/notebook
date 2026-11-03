@@ -7,8 +7,6 @@ sort:
   sections: first
 ignore:
   - CS50/
-  - CS106L/
-  - 宏毅2526/
   - 学习路线.md
 nav:
   - 说明.md
@@ -18,14 +16,26 @@ nav:
     - CS61A/示例代码
     - CS61A/Project
     - CS61A/Notes
+  - CS61C:
+    - CS61C/说明.md
+    - CS61C/Lectures
+    - CS61C/Project
   - CS70:
     - CS70/说明.md
     - CS70/Lectures
     - CS70/HW
+  - CS106L:
+    - CS106L/说明.md
+    - CS106L/Lectures
+    - CS106L/Project
   - CS188:
     - CS188/说明.md
     - CS188/Lectures
     - CS188/Project
+  - CS336:
+    - CS336/说明.md
+    - CS336/Lectures
+    - CS336/Project
   - 宏毅22:
     - 宏毅22/说明.md
     - Lectures:
@@ -35,3 +45,14 @@ nav:
     - "宏毅22/*.md"
   - 宏毅2526:
     - 宏毅2526/说明.md
+    - 宏毅23Diffusion:
+      - 宏毅2526/宏毅23Diffusion/说明.md
+      - "宏毅2526/宏毅23Diffusion/*.md"
+    - 宏毅24: 宏毅2526/宏毅24.md
+    - 宏毅25:
+      - 宏毅2526/宏毅25/说明.md
+      - 宏毅2526/宏毅25/Lectures
+    - 宏毅26:
+      - 宏毅2526/宏毅26/说明.md
+      - 宏毅2526/宏毅26/Units
+    - 宏毅2526/HW
